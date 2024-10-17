@@ -14,6 +14,31 @@
     color: #FFE81F;
 }
 
+.link-info{
+    text-decoration: none;
+}
+
+.link-info h3:hover{
+    color: #4BD5EE;
+}
+
+.botones-fin2 {
+    display: flex;
+    /* Hace que los elementos se muestren en línea */
+    justify-content: center;
+    /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 30px;
+    margin-top: 0%;
+  }
+  
+  
+  .botones-fin2 svg {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+  }
 
 .lightsabers-container {
     display: flex;
@@ -33,7 +58,7 @@
     border-radius: 10px;
     position: absolute;
     left: 50%;
-    bottom: 65%;
+    bottom: 70%;
     transform: translateX(-50%);
     opacity: 0;
     /* Inicialmente apagado */

@@ -336,63 +336,66 @@
 
 /*Movimientos*/
 .movedown {
-    margin: 5% auto;
+    margin: 3% auto;
 }
 
 .rotate {
-    margin: 5% auto;
+    margin: 3% auto;
     -webkit-transform: scale(-5, -5);
     transform: scale(-5, -5);
     transition: all 800ms ease-in-out;
 }
 
 .resize {
-    margin: 5% auto;
+    margin: 3% auto;
     width: 0;
     height: 0;
 }
 
 .modalmask:target .movedown {
     width: 1000px;
-    height: 600px;
+    height: 500px;
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    line-height: 4%;
+    line-height: 3%;
     overflow-y: auto;
     /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
     background-color: #7E7474;
-    padding: 15px 5px;
+    padding: 25px 5px;
+    margin-bottom: 35px;
 }
 
 .modalmask:target .rotate {
     transform: rotate(360deg) scale(1, 1);
     -webkit-transform: rotate(360deg) scale(1, 1);
     width: 1000px;
-    height: 600px;
+    height: 500px;
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    line-height: 4%;
+    line-height: 3%;
     overflow-y: auto;
     /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
     background-color: #7E7474;
-    padding: 15px 5px;
+    padding: 25px 5px;
+    margin-bottom: 35px;
 }
 
 
 
 .modalmask:target .resize {
     width: 1000px;
-    height: 600px;
+    height: 500px;
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    line-height: 4%;
+    line-height: 3%;
     overflow-y: auto;
     /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
     background-color: #7E7474;
-    padding: 15px 5px;
+    padding: 1
+    25px 5px;
     margin-bottom: 35px;
 }
 
@@ -527,3 +530,30 @@
     letter-spacing: 0.4vw;
     color: #FFE81F;
 }
+
+
+.botones-fin2 {
+    display: flex;
+    /* Hace que los elementos se muestren en línea */
+    justify-content: center;
+    /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 30px;
+    margin-top: 0%;
+  }
+  
+  
+  .botones-fin2 svg {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+  }
+
+  .icono-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    font-weight: bolder;
+    margin-top: 10%;
+    color: #000000;
+  }
