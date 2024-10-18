@@ -67,6 +67,10 @@
         </div>
         <div class="articulo5">
             <main>
+                <?php
+                require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+                /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+                ?>
                 <p>En el universo de Star Wars, los sables de luz son icónicos, pero las frases que se centran
                     específicamente en ellos son menos comunes. Sin embargo, hay diálogos memorables que involucran
                     sables de luz, especialmente en momentos de combate o reflexiones sobre su significado. Por ejemplo,

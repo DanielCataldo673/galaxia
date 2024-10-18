@@ -113,40 +113,46 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <div class="articulo1">
 
       <main>
-        <article class="starwars">  
-          <audio id="starWarsAudio" preload="auto">  
-              <source src="mp3/STAR WARS Suite for Orchestra (Complete Soundtrack) Orquesta y Coro RTVE.mp3" type="audio/mpeg" />  
-              
-          </audio>  
-      
-          <section class="start">  
-              <h1>Star <br><p class="h1parrafo">Wars</p></h1>  
-              <h2>UNA HISTORIA DE</h2>  
-              <h3>CFP-AMDELCO</h3>  
-              <span>Presentado por Griselda Leticia Ayala, Damian Trajster y Jorge Daniel Cataldo </span>  
-              <div class="contentpresentacion">  
-                  <button class="presentacion-btn">Presentación</button>  
-                  <a href="views/inicio.php" target="_self"><button class="presentacion-btn">Entrar</button></a>  
-              </div>  
-          </section>  
-          <section class="intro">  
-            Hace mucho tiempo, en una galaxia muy,<br> muy lejana...  
-        </section>  
-          <div class="animation">  
-              
-      
-              <section class="star-wars">  
-                  <p class="titlesparrafo">  
-                      Un grupo de valientes estudiantes se une para crear una aplicación web que permitirá a los usuarios explorar la galaxia de Star Wars. Enfrentan el desafío de dar vida a una plataforma donde los visitantes serán testigos de la magia de esta creación, viviendo una aventura que restaurará la libertad del conocimiento en la galaxia del entretenimiento.   
-                      Los exploradores de está app serán protagonistas de una exquisita travesía, participando en un relato que recobrará
-                      la esencia del conocimiento. 
-                  </p>  
-              </section>  
-          </div>  
-      </article>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
+        <article class="starwars">
+          <audio id="starWarsAudio" preload="auto">
+            <source src="mp3/STAR WARS Suite for Orchestra (Complete Soundtrack) Orquesta y Coro RTVE.mp3" type="audio/mpeg" />
 
-      
-  
+          </audio>
+
+          <section class="start">
+            <h1>Star <br>
+              <p class="h1parrafo">Wars</p>
+            </h1>
+            <h2>UNA HISTORIA DE</h2>
+            <h3>CFP-AMDELCO</h3>
+            <span>Presentado por Griselda Leticia Ayala, Damian Trajster y Jorge Daniel Cataldo </span>
+            <div class="contentpresentacion">
+              <button class="presentacion-btn">Presentación</button>
+              <a href="views/inicio.php" target="_self"><button class="presentacion-btn">Entrar</button></a>
+            </div>
+          </section>
+          <section class="intro">
+            Hace mucho tiempo, en una galaxia muy,<br> muy lejana...
+          </section>
+          <div class="animation">
+
+
+            <section class="star-wars">
+              <p class="titlesparrafo">
+                Un grupo de valientes estudiantes se une para crear una aplicación web que permitirá a los usuarios explorar la galaxia de Star Wars. Enfrentan el desafío de dar vida a una plataforma donde los visitantes serán testigos de la magia de esta creación, viviendo una aventura que restaurará la libertad del conocimiento en la galaxia del entretenimiento.
+                Los exploradores de está app serán protagonistas de una exquisita travesía, participando en un relato que recobrará
+                la esencia del conocimiento.
+              </p>
+            </section>
+          </div>
+        </article>
+
+
+
       </main>
 
     </div>

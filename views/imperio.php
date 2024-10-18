@@ -70,6 +70,10 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <blockquote>
           <p>"¡Somos un Imperio regido por la mayoría! ¡Un Imperio regido por una nueva constitución! ¡Un Imperio de leyes, no de políticos! Un Imperio dedicado a la preservación de una sociedad justa. ¡De una sociedad segura! ¡Somos un Imperio que se mantendrá durante diez mil años!</p>
           <cite>(Palpatine)."</cite>

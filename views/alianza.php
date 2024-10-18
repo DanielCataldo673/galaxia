@@ -70,9 +70,13 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <p>
           La Alianza Rebelde es una organización en el universo de Star Wars que lucha contra el Imperio Galáctico. Se formó como respuesta a la opresión y la tiranía del Imperio, buscando restaurar la República y devolver la libertad a la galaxia. La Alianza está compuesta por diversos grupos y individuos que se oponen al régimen imperial, incluidos los Jedi, los soldados, los activistas y civiles, entre otros.
-        A lo largo de la trilogía original, la Alianza Rebelde juega un papel crucial en la lucha contra el Imperio, llevando a cabo misiones de sabotaje, espionaje y combate. Su esfuerzo culmina en la destrucción de la Estrella de la Muerte, una potente estación espacial del Imperio, en la Batalla de Yavin. La Alianza Rebelde es un símbolo de resistencia y esperanza, representando la lucha por la libertad en un contexto de represión y conflicto galáctico.</p>
+          A lo largo de la trilogía original, la Alianza Rebelde juega un papel crucial en la lucha contra el Imperio, llevando a cabo misiones de sabotaje, espionaje y combate. Su esfuerzo culmina en la destrucción de la Estrella de la Muerte, una potente estación espacial del Imperio, en la Batalla de Yavin. La Alianza Rebelde es un símbolo de resistencia y esperanza, representando la lucha por la libertad en un contexto de represión y conflicto galáctico.</p>
 
         <div class="galeria">
           <div class="foto"><a href="../img/webp/alianza.webp" target="_blank"><img class="foto-1"
@@ -89,41 +93,41 @@
 
         </div>
         <h2>Puntos Clave</h2>
-        
-      </p>
-      <p class="republica">
-        Múltiples planetas apoyaron fervientemente a la Alianza y la asistieron durante muchos años con todo tipo de requerimientos, pues compartían el mismo odio por la tiranía imperial. La Guerra Civil no fue nada bien para la Rebelión, aunque todo cambió en el momento en que un escuadrón rebelde llamado Rogue One robó los planos de la Estrella de la Muerte. Finalmente, la situación cambió cuando el joven granjero de Tatooine (Luke Skywalker) y sus dos amigos contrabandistas (Han Solo y Chewbacca) ingresaron en la Alianza rebelde, dándole un gran giro. Durante la Batalla de Yavin, Luke consiguió destruir la poderosa arma imperial, matando además a uno de los grandes líderes, el Gran Moff Wilhuff Tarkin que muere en la explosión al no escapar de la Estrella de la Muerte.
-      </p>
-      <p class="republica">Poco antes de la creación del Imperio Galáctico, los senadores Mon Mothma, Bail Organa y Padmé Amidala, junto a otros senadores, presentaron la Petición de los 2000 a Palpatine para que este devolviera sus poderes especiales una vez acabaran las Guerras Clon. Sin embargo, el Canciller ahora procamado como el Emperador no los escuchó, más bien a aquellos que no se sometían al mandato del Emperador eran considerados traidores al Imperio y encarcelados o ejecutados.</p>
-      <p class="republica">Múltiples planetas apoyaron fervientemente a la Alianza y la asistieron durante muchos años con todo tipo de requerimientos, pues compartían el mismo odio por la tiranía imperial. La Guerra Civil no fue nada bien para la Rebelión, aunque todo cambió en el momento en que un escuadrón rebelde llamado Rogue One robó los planos de la Estrella de la Muerte. Finalmente, la situación cambió cuando el joven granjero de Tatooine (Luke Skywalker) y sus dos amigos contrabandistas (Han Solo y Chewbacca) ingresaron en la Alianza rebelde, dándole un gran giro. Durante la Batalla de Yavin, Luke consiguió destruir la poderosa arma imperial, matando además a uno de los grandes líderes, el Gran Moff Wilhuff Tarkin que muere en la explosión al no escapar de la Estrella de la Muerte.
 
-      </p>
+        </p>
+        <p class="republica">
+          Múltiples planetas apoyaron fervientemente a la Alianza y la asistieron durante muchos años con todo tipo de requerimientos, pues compartían el mismo odio por la tiranía imperial. La Guerra Civil no fue nada bien para la Rebelión, aunque todo cambió en el momento en que un escuadrón rebelde llamado Rogue One robó los planos de la Estrella de la Muerte. Finalmente, la situación cambió cuando el joven granjero de Tatooine (Luke Skywalker) y sus dos amigos contrabandistas (Han Solo y Chewbacca) ingresaron en la Alianza rebelde, dándole un gran giro. Durante la Batalla de Yavin, Luke consiguió destruir la poderosa arma imperial, matando además a uno de los grandes líderes, el Gran Moff Wilhuff Tarkin que muere en la explosión al no escapar de la Estrella de la Muerte.
+        </p>
+        <p class="republica">Poco antes de la creación del Imperio Galáctico, los senadores Mon Mothma, Bail Organa y Padmé Amidala, junto a otros senadores, presentaron la Petición de los 2000 a Palpatine para que este devolviera sus poderes especiales una vez acabaran las Guerras Clon. Sin embargo, el Canciller ahora procamado como el Emperador no los escuchó, más bien a aquellos que no se sometían al mandato del Emperador eran considerados traidores al Imperio y encarcelados o ejecutados.</p>
+        <p class="republica">Múltiples planetas apoyaron fervientemente a la Alianza y la asistieron durante muchos años con todo tipo de requerimientos, pues compartían el mismo odio por la tiranía imperial. La Guerra Civil no fue nada bien para la Rebelión, aunque todo cambió en el momento en que un escuadrón rebelde llamado Rogue One robó los planos de la Estrella de la Muerte. Finalmente, la situación cambió cuando el joven granjero de Tatooine (Luke Skywalker) y sus dos amigos contrabandistas (Han Solo y Chewbacca) ingresaron en la Alianza rebelde, dándole un gran giro. Durante la Batalla de Yavin, Luke consiguió destruir la poderosa arma imperial, matando además a uno de los grandes líderes, el Gran Moff Wilhuff Tarkin que muere en la explosión al no escapar de la Estrella de la Muerte.
 
-      <div class="galeria">
-        <div class="foto"><a href="../img/webp/alianza6.webp" target="_blank"><img class="foto-1"
-              src="../img/webp/alianza6.webp" alt="banderas6"></a>
+        </p>
+
+        <div class="galeria">
+          <div class="foto"><a href="../img/webp/alianza6.webp" target="_blank"><img class="foto-1"
+                src="../img/webp/alianza6.webp" alt="banderas6"></a>
+          </div>
+
+          <div class="foto"><a href="../img/jpg/alianza2.jpg" target="_blank"><img class="foto-1"
+                src="../img/jpg/alianza2.jpg" alt="banderas8"></a>
+          </div>
+
+          <div class="foto"><a href="../img/jpg/alianza4.jpg" target="_blank"><img class="foto-1"
+                src="../img/jpg/alianza4.jpg" alt="banderas9"></a>
+          </div>
+
         </div>
+        <p class="republica">Los Líderes de la Alianza Rebelde por lo general eran bastante aguerridos y expertos militares o diplomáticos. Tal es el caso de Mon Mothma o la princesa Leia Organa, dos senadoras. O del General Jan Dodonna, General Crix Madine, Carlist Rieekan y otros.
+        </p>
+        <p class="republica">Se decía que la Alianza contaba con los mejores pilotos de la Galaxia, entre ellos estaban: Jek Porkins, Wedge Antilles, Luke Skywalker, Garven Dreis, Biggs Darklighter, Dutch Vander entre otros.
+        </p>
+        <p class="republica">La Alianza, principalmente gracias al Escuadrón Rogue y a las grandes habilidades de varios generales (destacando Madine y Rieekan) obtuvieron múltiples victorias. Sin embargo, el Imperio seguía siendo muy superior: contaba con una flota más grande y poderosa, además de los casi invencibles súperdestructores. La única ventaja de la Alianza, los cazas Ala-X, fue también superada por el Imperio con los TIE Defensores.
+        </p>
+        <p class="republica">A pesar de los esfuerzos de la Rebelión, tenían pocas oportunidades contra el Imperio, sobre todo tras grandes derrotas como la de Hoth. No obstante, cuando el Gran Almirante Demetrius Zaarin inició una revuelta interna contra el Emperador, la flota imperial quedó diezmada, facilitando así la resistencia de la Rebelión.
 
-        <div class="foto"><a href="../img/jpg/alianza2.jpg" target="_blank"><img class="foto-1"
-              src="../img/jpg/alianza2.jpg" alt="banderas8"></a>
-        </div>
+          Finalmente en Endor, lograron destruir la Segunda Estrella de la Muerte y se coronaron victoriosos en la guerra civil, acabando con el Emperador Palpatine y su reinado de terror.
 
-        <div class="foto"><a href="../img/jpg/alianza4.jpg" target="_blank"><img class="foto-1"
-              src="../img/jpg/alianza4.jpg" alt="banderas9"></a>
-        </div>
-
-      </div>
-      <p class="republica">Los Líderes de la Alianza Rebelde por lo general eran bastante aguerridos y expertos militares o diplomáticos. Tal es el caso de Mon Mothma o la princesa Leia Organa, dos senadoras. O del General Jan Dodonna, General Crix Madine, Carlist Rieekan y otros.
-      </p>
-      <p class="republica">Se decía que la Alianza contaba con los mejores pilotos de la Galaxia, entre ellos estaban: Jek Porkins, Wedge Antilles, Luke Skywalker, Garven Dreis, Biggs Darklighter, Dutch Vander entre otros.
-      </p>
-      <p class="republica">La Alianza, principalmente gracias al Escuadrón Rogue y a las grandes habilidades de varios generales (destacando Madine y Rieekan) obtuvieron múltiples victorias. Sin embargo, el Imperio seguía siendo muy superior: contaba con una flota más grande y poderosa, además de los casi invencibles súperdestructores. La única ventaja de la Alianza, los cazas Ala-X, fue también superada por el Imperio con los TIE Defensores.
-      </p>
-      <p class="republica">A pesar de los esfuerzos de la Rebelión, tenían pocas oportunidades contra el Imperio, sobre todo tras grandes derrotas como la de Hoth. No obstante, cuando el Gran Almirante Demetrius Zaarin inició una revuelta interna contra el Emperador, la flota imperial quedó diezmada, facilitando así la resistencia de la Rebelión.
-
-        Finalmente en Endor, lograron destruir la Segunda Estrella de la Muerte y se coronaron victoriosos en la guerra civil, acabando con el Emperador Palpatine y su reinado de terror.
-        
-        Tras triunfar en Endor, los Rebeldes crearon la Alianza de los Planetas Libres para, finalmente, fundar la Nueva República con la conquista de Coruscant.
+          Tras triunfar en Endor, los Rebeldes crearon la Alianza de los Planetas Libres para, finalmente, fundar la Nueva República con la conquista de Coruscant.
         </p>
         <div class="galeria">
           <div class="foto"><a href="../img/jpg/alianza7.jpg" target="_blank"><img class="foto-1"
@@ -141,86 +145,86 @@
         </div>
 
 
-        <details>  
-          <summary>  
-            📜 información de la Alianza Rebelde (haz clic para expandir)  
-          </summary>  
-          <table>  
-            <caption>  
-              Un resumen de su organización  
-            </caption>  
-            <thead>  
-              <tr>  
-                <th colspan="2">Información básica</th>  
-              </tr>  
-              <tr>  
-                <th scope="col">Categoría</th>  
-                <th scope="col">Detalles</th>  
-              </tr>  
-            </thead>  
-            <tbody>  
-              <tr>  
-                <td>Serie</td>  
-                <td>Star Wars</td>  
-              </tr>  
-              <tr>  
-                <td>Tipo</td>  
-                <td>Movimiento de resistencia pro-democracia republicana, doctrina de guerra asimétrica</td>  
-              </tr>  
-              <tr>  
-                <td>Primera aparición</td>  
-                <td>Star Wars: Episodio IV - Una nueva esperanza</td>  
-              </tr>  
-              <tr>  
-                <td>Última aparición</td>  
-                <td>Andor</td>  
-              </tr>  
-              <tr>  
-                <td>Causa</td>  
-                <td>Reorganizada en la Nueva República</td>  
-              </tr>  
-              <tr>  
-                <td>Fundación</td>  
-                <td>2 ABY, con la firma de la Declaración de Rebelión</td>  
-              </tr>  
-              <tr>  
-                <td>Disolución</td>  
-                <td>4 DBY, reorganizada en la Nueva República</td>  
-              </tr>  
-              <tr>  
-                <td>Localización</td>  
-                <td>Alderaan, Yavin, Hoth y otros</td>  
-              </tr>  
-              <tr>  
-                <td>Líder</td>  
-                <td>Canciller Mon Mothma, Alto Comando de la Alianza</td>  
-              </tr>  
-              <tr>  
-                <td>Personas clave</td>  
-                <td>Leia Organa, Luke Skywalker, Bail Organa, Han Solo, Almirante Ackbar, Lando Calrissian, Cassian Andor, Jyn Erso, K-2SO</td>  
-              </tr>  
-              <tr class="separator">  
-                <td colspan="2"></td> <!-- Casilla de separación -->  
-              </tr>  
-              <thead>  
-                <tr>  
-                  <th colspan="2">Propósito y enemigos</th>  
-                </tr>  
-                <tr>  
-                  <th scope="col">Categoría</th>  
-                  <th scope="col">Detalles</th>  
-                </tr>  
-              </thead>  
-              <tr>  
-                <td>Propósito</td>  
-                <td>Luchar contra la tiranía del Imperio Galáctico, Restaurar la República</td>  
-              </tr>  
-              <tr>  
-                <td>Enemigos</td>  
-                <td>Emperador Palpatine, Darth Vader, Imperio Galáctico</td>  
-              </tr>  
-            </tbody>  
-          </table>  
+        <details>
+          <summary>
+            📜 información de la Alianza Rebelde (haz clic para expandir)
+          </summary>
+          <table>
+            <caption>
+              Un resumen de su organización
+            </caption>
+            <thead>
+              <tr>
+                <th colspan="2">Información básica</th>
+              </tr>
+              <tr>
+                <th scope="col">Categoría</th>
+                <th scope="col">Detalles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Serie</td>
+                <td>Star Wars</td>
+              </tr>
+              <tr>
+                <td>Tipo</td>
+                <td>Movimiento de resistencia pro-democracia republicana, doctrina de guerra asimétrica</td>
+              </tr>
+              <tr>
+                <td>Primera aparición</td>
+                <td>Star Wars: Episodio IV - Una nueva esperanza</td>
+              </tr>
+              <tr>
+                <td>Última aparición</td>
+                <td>Andor</td>
+              </tr>
+              <tr>
+                <td>Causa</td>
+                <td>Reorganizada en la Nueva República</td>
+              </tr>
+              <tr>
+                <td>Fundación</td>
+                <td>2 ABY, con la firma de la Declaración de Rebelión</td>
+              </tr>
+              <tr>
+                <td>Disolución</td>
+                <td>4 DBY, reorganizada en la Nueva República</td>
+              </tr>
+              <tr>
+                <td>Localización</td>
+                <td>Alderaan, Yavin, Hoth y otros</td>
+              </tr>
+              <tr>
+                <td>Líder</td>
+                <td>Canciller Mon Mothma, Alto Comando de la Alianza</td>
+              </tr>
+              <tr>
+                <td>Personas clave</td>
+                <td>Leia Organa, Luke Skywalker, Bail Organa, Han Solo, Almirante Ackbar, Lando Calrissian, Cassian Andor, Jyn Erso, K-2SO</td>
+              </tr>
+              <tr class="separator">
+                <td colspan="2"></td> <!-- Casilla de separación -->
+              </tr>
+              <thead>
+                <tr>
+                  <th colspan="2">Propósito y enemigos</th>
+                </tr>
+                <tr>
+                  <th scope="col">Categoría</th>
+                  <th scope="col">Detalles</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Propósito</td>
+                <td>Luchar contra la tiranía del Imperio Galáctico, Restaurar la República</td>
+              </tr>
+              <tr>
+                <td>Enemigos</td>
+                <td>Emperador Palpatine, Darth Vader, Imperio Galáctico</td>
+              </tr>
+            </tbody>
+          </table>
         </details>
         <div class="iconorepublica"><img src="../img/png/alianza-fotor-bg-remover-202409268933.png" alt="alianzalogo"></div>
       </main>
@@ -296,13 +300,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-

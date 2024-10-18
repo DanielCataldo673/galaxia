@@ -78,6 +78,10 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <p>Los personajes de Star Wars incluyen figuras emblemáticas como Darth Vader, Anakin Skywalker, Luke Skywalker,
           Princesa Leia, Han Solo, Chewbacca, R2-D2, C-3PO y Yoda. También hay personajes secundarios significativos
           como Aayla Secura, Ahsoka Tano, y Mara Jade Skywalker. Cada uno de estos personajes tiene una historia rica y

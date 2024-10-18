@@ -70,6 +70,10 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <p>Los Sith, también conocidos como la Orden Sith, fue una antigua orden de portadores de la Fuerza dedicados al lado oscuro de la Fuerza. Emergiendo como una facción divergente de la Orden Jedi, los Sith se convirtieron en los enemigos mortales de los Jedi y lucharon contra ellos en numerosas guerras.</p>
 
         <div class="galeria">

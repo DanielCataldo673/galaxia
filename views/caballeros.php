@@ -70,6 +70,10 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <p>Los Caballeros de Ren fueron una misteriosa orden de guerreros de élite que seguían al lado oscuro de la Fuerza en una era donde los Sith estaban extintos y la Orden Jedi estaba casi destruida. </p>
 
         <div class="galeria">

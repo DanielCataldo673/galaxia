@@ -69,6 +69,10 @@
         </div>
         <div class="articulo5">
             <main>
+                <?php
+                require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+                /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+                ?>
                 <p>Las naves de Star Wars son íconos de la ciencia ficción, representando la vasta diversidad del
                     universo galáctico. Desde los icónicos cazas TIE y X-wing hasta el legendario Halcón Milenario, cada
                     nave tiene su propia historia y diseño distintivo. Estas naves no solo son vehículos de combate,

@@ -67,6 +67,10 @@
     </div>
     <div class="articulo5">
       <main>
+        <?php
+        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
+        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
+        ?>
         <p>¡Bienvenidos a la galaxia de Star Wars! Te presentamos nuestra increíble app, un viaje interactivo por el
           universo que enciende la imaginación de millones. Aquí, los fans de todas las edades pueden explorar una vasta
           colección de personajes icónicos, desde los valientes Jedi hasta los temibles Sith, cada uno con su propia
