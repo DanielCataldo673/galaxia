@@ -164,7 +164,7 @@ public function delete(){
 
         //Devuelve el catalogo de personajes de una especie en particular
 
-        public function catalogo_x_variedad(int $especie_id) : array {
+        public function catalogo_x_especie(int $especie_id) : array {
             $catalogo = [];
     
             //llamamos a la conexion
