@@ -38,10 +38,7 @@
   </nav>
   <br>
   <main>
-  <?php
-    require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-    /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-    ?>
+  
   <h1>Aliados de la Galaxia Web</h1>
   <h2>Desarrolladores de la Fuerza</h2>
 

@@ -70,10 +70,7 @@
     </div>
     <div class="articulo5">
       <main>
-        <?php
-        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-        ?>
+        
         <p>La Resistencia, también conocida como la Rebelión, fue una pequeña fuerza militar fundada por Leia Organa para combatir a la Primera Orden. Los orígenes de la Resistencia, que se inspiró en la Alianza para Restaurar la República, se remontan al final de la Guerra Civil Galáctica, cuando la Nueva República aprobó el Acta de Desarme Militar a raíz de la firma del Concordato Galáctico con el Imperio Galáctico.</p>
 
         <div class="galeria">

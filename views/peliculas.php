@@ -67,10 +67,7 @@
     </div>
     <div class="articulo5">
       <main>
-        <?php
-        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-        ?>
+       
         <p>¡Bienvenidos a nuestro rincón dedicado a las películas de Star Wars! Aquí exploramos la épica saga que ha
           cautivado a generaciones, desde la lucha entre Jedi y Sith hasta las aventuras en galaxias muy, muy lejanas.
           Descubre análisis de cada episodio, personajes icónicos y momentos inolvidables que han dejado huella en la

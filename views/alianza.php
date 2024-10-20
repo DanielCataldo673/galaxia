@@ -70,10 +70,7 @@
     </div>
     <div class="articulo5">
       <main>
-        <?php
-        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-        ?>
+       
         <p>
           La Alianza Rebelde es una organización en el universo de Star Wars que lucha contra el Imperio Galáctico. Se formó como respuesta a la opresión y la tiranía del Imperio, buscando restaurar la República y devolver la libertad a la galaxia. La Alianza está compuesta por diversos grupos y individuos que se oponen al régimen imperial, incluidos los Jedi, los soldados, los activistas y civiles, entre otros.
           A lo largo de la trilogía original, la Alianza Rebelde juega un papel crucial en la lucha contra el Imperio, llevando a cabo misiones de sabotaje, espionaje y combate. Su esfuerzo culmina en la destrucción de la Estrella de la Muerte, una potente estación espacial del Imperio, en la Batalla de Yavin. La Alianza Rebelde es un símbolo de resistencia y esperanza, representando la lucha por la libertad en un contexto de represión y conflicto galáctico.</p>

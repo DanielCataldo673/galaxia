@@ -113,10 +113,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <div class="articulo1">
 
       <main>
-        <?php
-        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-        ?>
+       
         <article class="starwars">
           <audio id="starWarsAudio" preload="auto">
             <source src="mp3/STAR WARS Suite for Orchestra (Complete Soundtrack) Orquesta y Coro RTVE.mp3" type="audio/mpeg" />

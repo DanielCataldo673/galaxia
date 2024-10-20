@@ -69,10 +69,7 @@
     </div>
     <div class="articulo5">
       <main>
-        <?php
-        require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-        /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-        ?>
+        
         <p>La Orden Jedi, posteriormente conocida como la Antigua Orden Jedi y referida como la Sagrada Orden de los Caballeros Jedi, fue una antigua organización monástica guardiana de la paz unificada por su creencia y observancia de la Fuerza, específicamente su lado luminoso. </p>
         <div class="galeria">
           <div class="foto"><a href="../img/webp/orden.webp" target="_blank"><img class="foto-1"

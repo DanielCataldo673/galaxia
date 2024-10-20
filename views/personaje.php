@@ -69,10 +69,7 @@
         </div>
         <div class="articulo5">
             <main>
-                <?php
-                require file_exists("views/$vista.php") ? "views/$vista.php" : "views/404.php";
-                /* La palabra clave required nos permite hacer que un input de un formulario sea obligatorio. */
-                ?>
+               
                 <div class="containercard">
                     <div class="cardpersonaje">
                         <div class="imagenpersonaje">
