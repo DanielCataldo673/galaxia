@@ -242,7 +242,7 @@ public function naves_x_id(int $idNaves) : ?Naves {
         return $this->getNombreNaves()->getNombre();
     }
 
-// Método buscar  
+// Método buscar Naves 
 public function buscarNaves($keywords) {  
     // Llamamos a la conexión  
     $conexion = (new Conexion())->getConexion();  

@@ -458,6 +458,26 @@
     margin-top: 4%;
 }
 
+.buscarpelis2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: #FFD43B;
+    line-height: 2.9vw;
+    margin-top: 4%;
+}
+
+.buscarpelis2 strong{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.buscarpelis{
+    width: 1530px;
+    height: 500px;
+}
+
 
 /* QUIZ */
 

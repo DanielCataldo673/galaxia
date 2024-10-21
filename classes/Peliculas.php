@@ -275,7 +275,7 @@ public function peliculas_x_id(int $idPeliculas) : ?Peliculas {
         return $this->getTitulo()->getNombre();
     }
 
-// Método buscar  
+// Método buscar Peliculas 
 public function buscarPeliculas($keywords) {  
     // Llamamos a la conexión  
     $conexion = (new Conexion())->getConexion();  

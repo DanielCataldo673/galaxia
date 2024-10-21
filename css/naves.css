@@ -106,12 +106,6 @@
     margin-left: 0%;
 }  
 
-.draggableimagenreal img {  
-    width: 600px; /* Asegúrate de que las imágenes no excedan el ancho del contenedor */  
-    height: 450px; /* Mantiene la proporción de las imágenes */  
-    border-radius: 5%;  
-}  
-
 .info-block h3 {  
     color: #FFE81F;  
     list-style: none;  
@@ -149,6 +143,79 @@
 .info-block p strong {  
     color: #FFE81F;  
 }  
+
+.draggableimagenreal img {  
+    width: 600px; /* Asegúrate de que las imágenes no excedan el ancho del contenedor */  
+    height: 450px; /* Mantiene la proporción de las imágenes */  
+    border-radius: 5%;  
+}  
+
+.draggableimagenrealbuscar {  
+    display: flex; /* Usar flexbox para mostrar imágenes en línea */  
+    justify-content: center; /* Centrar las imágenes horizontalmente */  
+    gap: 10px; /* Espacio entre imágenes (ajustar según preferencia) */  
+    width: 100%;  
+    margin-top: 2%;  
+    margin-left: 0%;
+}  
+
+.draggableimagenrealbuscar img {  
+    width: 600px; /* Asegúrate de que las imágenes no excedan el ancho del contenedor */  
+    height: 450px; /* Mantiene la proporción de las imágenes */  
+    border-radius: 5%;  
+}  
+
+.containerinfobuscar {  
+    width: 1200px; /* Ajusta el tamaño según necesites */  
+    border-radius: 10px;  
+    padding: 10px; /* Mantener el espaciado interno */  
+    display: flex;  
+    flex-direction: column; /* Mantener contenido en vertical */  
+    align-items: center; /* Centrar el contenido dentro del contenedor */  
+    margin-left: 10%;
+    background: rgba(250, 250, 253, 0);
+    backdrop-filter: blur(10px);
+}  
+
+.infobuscarnaves h3 {  
+    color: #FFE81F;  
+    list-style: none;  
+    line-height: 3vw;  
+    font-family: 'Roboto', sans-serif;  
+    font-size: 2.5vw;  
+    font-weight: bold;  
+    text-align: start;  
+    margin-bottom: 3%;  
+}  
+
+.infobuscarnaves ul li {  
+    color: white;  
+    list-style: none;  
+    line-height: 2vw;  
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.4vw;  
+    text-align: center;  
+    margin-bottom: 3%;  
+}  
+
+.infobuscarnaves ul li strong {  
+    color: #FFE81F;  
+}  
+
+.infobuscarnaves p {  
+    color: white;  
+    line-height: 1.8vw;  
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.2vw;  
+    text-align: start;  
+    margin-left: 0%;  
+}  
+
+.infobuscarnaves p strong {  
+    color: #FFE81F;  
+}  
+
+
 
 /* Estilo adicional para mejorar la visibilidad al limpiar la selección */  
 .clear-button {  

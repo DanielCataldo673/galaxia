@@ -237,7 +237,8 @@ public function sables_x_id(int $idSables) : ?Sables {
         return $this->getNombreSables()->getNombre();
     }
 
-// Método buscar  
+
+    // Método buscar Sables  
 public function buscarSables($keywords) {  
     // Llamamos a la conexión  
     $conexion = (new Conexion())->getConexion();  
@@ -266,9 +267,7 @@ public function buscarSables($keywords) {
 
     return $resultados;  
 }
-   
 
-   
 
     
 

@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Resultados de la Búsqueda</title>
 
 
 
   <!-- vincular estilos -->
-  <link rel="stylesheet" href="../css/estilos.css">
-
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/naves.css">
 
   <!-- Animated -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -20,7 +21,7 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- Favicon-->
-  <link rel="icon" href="../img/ico/icono.ico">
+  <link rel="icon" href="img/ico/icono.ico">
 
   <!-- font -->
   <link href="https://fonts.cdnfonts.com/css/starjedi-special-edition" rel="stylesheet">
@@ -42,13 +43,13 @@
         <ul class="nav">
 
 
-          <li><a href="inicio.php" target="_self">inicio</a></li>
-          <li><a href="personajes.php" target="_self">Personajes</a></li>
-          <li><a href="naves.php" target="_self">Naves</a></li>
-          <li><a href="sables.php" target="_self">Sables de Luz</a></li>
-          <li><a href="peliculas.php" target="_self">Peliculas</a></li>
-          <li><a href="../index.php" target="_self">Presentación</a></li>
-          <li><a href="creditos.php" target="_self">Créditos</a></li>
+          <li><a href="views/inicio.php" target="_self">inicio</a></li>
+          <li><a href="views/personajes.php" target="_self">Personajes</a></li>
+          <li><a href="views/naves.php" target="_self">Naves</a></li>
+          <li><a href="views/sables.php" target="_self">Sables de Luz</a></li>
+          <li><a href="views/peliculas.php" target="_self">Peliculas</a></li>
+          <li><a href="views/index.php" target="_self">Presentación</a></li>
+          <li><a href="views/creditos.php" target="_self">Créditos</a></li>
 
 
         </ul>
@@ -62,161 +63,41 @@
 
     <div class="articulo4">
       <header>
-        <h1>inicio</h1>
+        <h1>Resultados de la Búsqueda</h1>
       </header>
     </div>
     <div class="articulo5">
       <main>
 
-        <p>¡Bienvenidos a la galaxia de Star Wars! Te presentamos nuestra increíble app, un viaje interactivo por el
-          universo que enciende la imaginación de millones. Aquí, los fans de todas las edades pueden explorar una vasta
-          colección de personajes icónicos, desde los valientes Jedi hasta los temibles Sith, cada uno con su propia
-          historia y habilidades únicas, naves, sables de luz y grandes peliculas.
-          Con nuestra app, la aventura nunca termina. ¡Que la Fuerza te acompañe en cada clic!
+      <div class="infobuscarnaves">
+                        <div class="containerinfobuscar">
+                            <h3><strong>Halcón Milenario</strong></h3>
+                            <ul>
+                                <li><strong>Sistema de navegación</strong>: HoloNavegador con actualizaciones pirata.
+                                </li>
+                                <li><strong>Coste</strong>: Aproximadamente 100,000 créditos.</li>
+                                <li><strong>Fabricante</strong>: Corellian Engineering Corporation.</li>
+                                <li><strong>Especificaciones técnicas</strong>: Hiperimpulsor clase 0.5.</li>
+                                <li><strong>Tamaño</strong>: 34.75 metros.</li>
+                                <li><strong>Facción</strong>: Alianza Rebelde / Neutro.</li>
+                                <li><strong>Tipo</strong>: Carguero ligero.</li>
+                                <li><strong>Velocidad</strong>: 0.5 (híper) / 1050 km/h (sublumínica).</li>
+                                <li><strong>Armamento</strong>: 2 cañones láser, torpedos de protones.</li>
+                            </ul>
+                            <p><strong>Descripción</strong>: La famosa Millennium Falcon es una nave de carga
+                                modificada, reconocida por su velocidad y maniobrabilidad excepcionales. Con un diseño
+                                distintivo, esta icónica nave es utilizada por Han Solo y Chewbacca. A pesar de su
+                                apariencia desgastada, cuenta con avances tecnológicos que la hacen competitiva en
+                                combate. Su capacidad para realizar viajes en el hiperespacio con rapidez la convierte
+                                en un recurso valioso en la lucha contra el Imperio y los enemigos de la Rebelión.</p>
+                        </div>
+                        <div class="draggableimagenrealbuscar">
+                            <img src="img/naves/Halcón_Milenario.jpg" alt="Imagen1">
+                            <img src="img/naves/Halcón_Milenario-fotor-bg-remover-20240930172554.png" alt="Imagen1">
+                        </div>
 
-        </p>
 
-        <h2 class="animate__animated animate__rubberBand animate__repeat-2	animate__delay-5s">Buscador</h2>
-        <form id="miFormulario" action="buscadornaves.php" method="GET" onsubmit="cambiarVista()">
-          <div class="buscadorinicio">
-            <button class="btnbuscar" type="submit">Buscar 🔍</button>
-            <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>
-            <button type="button" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>
-          </div>
-        </form>
-
-        <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>
-
-        <!-- SLIDER -->
-
-        <div class="slider">
-          <!-- list Items -->
-          <div id="slider" class="list">
-            <div class="item active">
-              <img class="myImage" src="../img/jpg/lyman-hansel-gerona-TVCDj_fFvx8-unsplash.jpg"
-                alt="lyman-hansel-gerona-TVCDj_fFvx8-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/rod-long-AcYH9GKvVlo-unsplash.jpg" alt="rod-long-AcYH9GKvVlo-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/brian-mcgowan-ggg_B1MeqQk-unsplash.jpg"
-                alt="brian-mcgowan-ggg_B1MeqQk-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/cade-roberts-EpIUbeFrqwQ-unsplash.jpg"
-                alt="cade-roberts-EpIUbeFrqwQ-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/carol-kennedy-X5WdN60n6yk-unsplash.jpg"
-                alt="carol-kennedy-X5WdN60n6yk-unsplash">
-
-            </div>
-
-            <div class="item">
-              <img class="myImage" src="../img/jpg/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg"
-                alt="emmanuel-denier-YiXsjwJKXmo-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/rod-long-51zvjVXINvE-unsplash.jpg" alt="rod-long-51zvjVXINvE-unsplash">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/star-warsjpg.jpg" alt="star-warsjpg">
-
-            </div>
-            <div class="item">
-              <img class="myImage" src="../img/jpg/universostarwarswebp.jpg" alt="universostarwarswebp">
-
-            </div>
-          </div>
-          <!-- button arrows -->
-          <div class="arrows2">
-            <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="15"
-                viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path fill="#ffffff"
-                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-              </svg></button>
-          </div>
-          <div class="arrows">
-            <button id="next"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="15"
-                viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path fill="#ffffff"
-                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-              </svg></button>
-          </div>
-          <!-- thumbnail -->
-          <div class="thumbnail">
-            <div class="item active">
-              <img src="../img/jpg/lyman-hansel-gerona-TVCDj_fFvx8-unsplash.jpg">
-              <div class="content">
-                <!--  <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/rod-long-AcYH9GKvVlo-unsplash.jpg">
-              <div class="content">
-                <!--  <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/brian-mcgowan-ggg_B1MeqQk-unsplash.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/cade-roberts-EpIUbeFrqwQ-unsplash.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/carol-kennedy-X5WdN60n6yk-unsplash.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/rod-long-51zvjVXINvE-unsplash.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/star-warsjpg.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="../img/jpg/universostarwarswebp.jpg">
-              <div class="content">
-                <!-- <h3>Titulo</h3>  -->
-                <button class="fullscreen-btn">FullScreen</button>
-              </div>
-            </div>
-          </div>
-        </div>
+                    </div>
 
       </main>
     </div>
@@ -237,7 +118,7 @@
         <!--Home -->
         <div class="icono-container">
 
-          <a href="inicio.php"><svg xmlns="http://www.w3.org/2000/svg"
+          <a href="views/inicio.php"><svg xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path fill="#FFFFFF"
                 d="M0 96C0 43 43 0 96 0L384 0l32 0c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0L96 512c-53 0-96-43-96-96L0 96zM64 416c0 17.7 14.3 32 32 32l256 0 0-64L96 384c-17.7 0-32 14.3-32 32zm90.4-234.4l-21.2-21.2c-3 10.1-5.1 20.6-5.1 31.6c0 .2 0 .5 .1 .8s.1 .5 .1 .8L165.2 226c2.5 2.1 3.4 5.8 2.3 8.9c-1.3 3-4.1 5.1-7.5 5.1c-1.9-.1-3.8-.8-5.2-2l-23.6-20.6C142.8 267 186.9 304 240 304s97.3-37 108.9-86.6L325.3 238c-1.4 1.2-3.3 2-5.3 2c-2.2-.1-4.4-1.1-6-2.8c-1.2-1.5-1.9-3.4-2-5.2c.1-2.2 1.1-4.4 2.8-6l37.1-32.5c0-.3 0-.5 .1-.8s.1-.5 .1-.8c0-11-2.1-21.5-5.1-31.6l-21.2 21.2c-3.1 3.1-8.1 3.1-11.3 0s-3.1-8.1 0-11.2l26.4-26.5c-8.2-17-20.5-31.7-35.9-42.6c-2.7-1.9-6.2 1.4-5 4.5c8.5 22.4 3.6 48-13 65.6c-3.2 3.4-3.6 8.9-.9 12.7c9.8 14 12.7 31.9 7.5 48.5c-5.9 19.4-22 34.1-41.9 38.3l-1.4-34.3 12.6 8.6c.6 .4 1.5 .6 2.3 .6c1.5 0 2.7-.8 3.5-2s.6-2.8-.1-4L260 225.4l18-3.6c1.8-.4 3.1-2.1 3.1-4s-1.4-3.5-3.1-3.9l-18-3.7 8.5-14.3c.8-1.2 .9-2.9 .1-4.1s-2-2-3.5-2l-.1 0c-.7 .1-1.5 .3-2.1 .7l-14.1 9.6L244 87.9c-.1-2.2-1.9-3.9-4-3.9s-3.9 1.6-4 3.9l-4.6 110.8-12-8.1c-1.5-1.1-3.6-.9-5 .4s-1.6 3.4-.8 5l8.6 14.3-18 3.7c-1.8 .4-3.1 2-3.1 3.9s1.4 3.6 3.1 4l18 3.8-8.6 14.2c-.2 .6-.5 1.4-.5 2c0 1.1 .5 2.1 1.2 3c.8 .6 1.8 1 2.8 1c.7 0 1.6-.2 2.2-.6l10.4-7.1-1.4 32.8c-19.9-4.1-36-18.9-41.9-38.3c-5.1-16.6-2.2-34.4 7.6-48.5c2.7-3.9 2.3-9.3-.9-12.7c-16.6-17.5-21.6-43.1-13.1-65.5c1.2-3.1-2.3-6.4-5-4.5c-15.3 10.9-27.6 25.6-35.8 42.6l26.4 26.5c3.1 3.1 3.1 8.1 0 11.2s-8.1 3.1-11.2 0z" />
@@ -287,8 +168,8 @@
 
 
 
-  <script src="../js/index.js"></script>
-  <script src="../js/buscadorinicio.js"></script>
+  <script src="js/naves.js"></script>
 </body>
 
 </html>
+

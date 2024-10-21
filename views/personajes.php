@@ -54,6 +54,7 @@
 
         </ul>
       </nav>
+      <form action="buscarpersonajes.php" method="GET">  
       <div class="buscadorpersonajes">
 
         <input class="tgl-skewed" type="text" placeholder="Barra de Búsqueda especifica de algún Personaje" id="buscarInput">
@@ -63,6 +64,7 @@
         <button class="btnborrar" type="reset">Borrar 🗑️</button>
 
       </div>
+      </form>
       <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>
     </div>
     <div class="articulo3">
