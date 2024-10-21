@@ -56,6 +56,18 @@ $secciones_validas = [
   ],
   "sith" => [
     "titulo" => "Sith"
+  ],
+  "buscarnaves" => [
+    "titulo" => "Buscar Naves"
+  ],
+  "buscarpeliculas" => [
+    "titulo" => "Buscar Peliculas"
+  ],
+  "buscarpersonajes" => [
+    "titulo" => "Buscar Personajes"
+  ],
+  "buscarsables" => [
+    "titulo" => "Buscar Sables"
   ]
 
 ];
