@@ -158,25 +158,24 @@ $especie = (new Especie())->get_x_id($id_especie);
             </form>
           </div>
 
-          <div class="wrapper">
-            <?php if (count($personajes)) { ?>
-              <?php foreach ($personajes as $personajes) { // Cambiado a $personaje para evitar confusión 
-              ?>
-                <div class="card">
-                  <h2 class="vermastitulo"><?= $personajes->getNombre(); ?></h2>
-                  <div class="imgContainer" style="--imgUrl: url(../img/<?= $personajes->getImagenUno(); ?>)"></div>
-                  <div class="img" style="--pngImgUrl: url(../img/<?= $personajes->getImagenDos(); ?>)">
-                    <div class="overLayer"></div>
-                  </div>
-                  <div class="vermas">
-                    <h3><a href="index.php?sec=personajes&id=<?= $personajes->getId(); ?>" target="_self">Ver más</a></h3>
-                  </div>
-                </div>
-              <?php } ?>
-            <?php } else { ?>
-              <h2>No se encontraron personajes.</h2>
-            <?php } ?>
-          </div>
+          <div class="wrapper">  
+    <?php if (count($personajes)) { ?>  
+        <?php foreach ($personajes as $personaje) { ?>  
+            <div class="card">  
+                <h2 class="vermastitulo"><?= $personaje->getNombre(); ?></h2>   
+                <div class="imgContainer" style="--imgUrl: url(../img/<?= $personaje->getImagenUno(); ?>)"></div> 
+                <div class="img" style="--pngImgUrl: url(../img/<?= $personaje->getImagenDos(); ?>)">  
+                    <div class="overLayer"></div>  
+                </div>  
+                <div class="vermas">  
+                    <h3><a href="index.php?sec=personajes&id=<?= $personaje->getId(); ?>" target="_self">Ver más</a></h3>
+                </div>  
+            </div>  
+        <?php } ?>  
+    <?php } else { ?>  
+        <h2>No se encontraron personajes.</h2>  
+    <?php } ?>  
+</div>
 
         </div>
 
