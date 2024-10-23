@@ -1,3 +1,17 @@
+<?php
+require_once '../classes/Peliculas.php';
+require_once '../classes/Titulo.php';
+
+$id_titulo = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
+
+$miObjetoPeliculas = new Peliculas();
+$peliculas = $miObjetoPeliculas->catalogo_x_titulo($id_titulo);
+
+$titulo = (new Titulo())->get_x_id($id_titulo);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 

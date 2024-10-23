@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Conexion.php';
 class Sables {
     protected $id;
     protected $descripcion_uno;

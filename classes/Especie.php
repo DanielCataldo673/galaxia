@@ -1,4 +1,5 @@
 <?php
+require_once 'Conexion.php';
 class Especie{
     protected $id;
     protected $nombre;

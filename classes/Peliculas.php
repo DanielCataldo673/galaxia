@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Conexion.php';
 class Peliculas {
     protected $id;
     protected $estreno;
@@ -208,7 +208,7 @@ public function delete(){
 
         //Devuelve el catalogo de peliculas de un titulo en particular
 
-        public function catalogo_x_nombre_peliculas(int $titulo_id) : array {
+        public function catalogo_x_titulo(int $titulo_id) : array {
             $catalogo = [];
     
             //llamamos a la conexion

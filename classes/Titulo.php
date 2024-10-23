@@ -1,4 +1,5 @@
 <?php
+require_once 'Conexion.php';
 class Titulo{
     protected $id;
     protected $nombre;

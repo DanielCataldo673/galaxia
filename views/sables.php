@@ -1,3 +1,17 @@
+<?php
+require_once '../classes/Sables.php';
+require_once '../classes/Nombre_Sables.php';
+
+$id_nombre_sables= $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
+
+$miObjetoSables = new Sables();
+$sables = $miObjetoSables->catalogo_x_nombre_sables($id_nombre_sables);
+
+$nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 

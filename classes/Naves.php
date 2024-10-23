@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Conexion.php';
 class Naves {
     protected $id;
     protected $sistema_navegacion;
