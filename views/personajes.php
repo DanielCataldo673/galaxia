@@ -1,3 +1,18 @@
+<?php
+require_once '../classes/Personajes.php';
+require_once '../classes/Especie.php';
+
+$id_especie = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
+
+$miObjetoPersonajes = new Personajes();
+$personajes = $miObjetoPersonajes->catalogo_x_especie($id_especie);
+
+$especie = (new Especie())->get_x_id($id_especie);
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -54,16 +69,16 @@
 
         </ul>
       </nav>
-      <form action="buscarpersonajes.php" method="GET">  
-      <div class="buscadorpersonajes">
+      <form action="buscarpersonajes.php" method="GET">
+        <div class="buscadorpersonajes">
 
-        <input class="tgl-skewed" type="text" placeholder="Barra de Búsqueda especifica de algún Personaje" id="buscarInput">
+          <input class="tgl-skewed" type="text" placeholder="Barra de Búsqueda especifica de algún Personaje" id="buscarInput">
 
-        <button class="btnbuscar" type="submit">Buscar 🔍</button>
+          <button class="btnbuscar" type="submit">Buscar 🔍</button>
 
-        <button class="btnborrar" type="reset">Borrar 🗑️</button>
+          <button class="btnborrar" type="reset">Borrar 🗑️</button>
 
-      </div>
+        </div>
       </form>
       <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>
     </div>
@@ -80,7 +95,7 @@
     </div>
     <div class="articulo5">
       <main>
-        
+
         <p>Los personajes de Star Wars incluyen figuras emblemáticas como Darth Vader, Anakin Skywalker, Luke Skywalker,
           Princesa Leia, Han Solo, Chewbacca, R2-D2, C-3PO y Yoda. También hay personajes secundarios significativos
           como Aayla Secura, Ahsoka Tano, y Mara Jade Skywalker. Cada uno de estos personajes tiene una historia rica y
@@ -144,322 +159,25 @@
           </div>
 
           <div class="wrapper">
-
-
-            <div class="card">
-
-              <h2 class="vermastitulo">Darth Vader</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/webp/dark6.webp)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/dark6-fotor-bg-remover-20240911103438.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-
-            <div class="card">
-              <h2 class="vermastitulo">Yoda</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/webp/yoda.webp)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/Yoda-fotor-bg-remover-20240911104135.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Darth Maul</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/dark-maul.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/dark-maul-fotor-bg-remover-20240911112150.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Palpatine</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/emperador.jpg)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/Emperor_Palpatine_GA-fotor-bg-remover-20240911161957.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-
-            <div class="card">
-              <h2 class="vermastitulo">C-3PO</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/c-3po.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/c-3po-fotor-bg-remover-20240911111039.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Luke Skywalker</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/luke.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/LukeSkywalker-fotor-bg-remover-2024091116553.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">R2-D2</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/r2-d2-fondo.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/r2-d2-fotor-bg-remover-20240911164931.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-
-            <div class="card">
-              <h2 class="vermastitulo">Leia Organa</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/leia-star-wars-8-1532775543.jpg)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/leia-star-wars-8-1532775543-fotor-bg-remover-2024091117453.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Han Solo</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/handsolo.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/handsolo-fotor-bg-remover-20240911171921.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Obi-Wan Kenobi</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/png/obi-wan-kenobi-tv-series.png)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/obi-wan-kenobi-tv-series-fotor-bg-remover-20240911173258.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-
-            <div class="card">
-              <h2 class="vermastitulo">AhsokaTano</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/webp/AhsokaTano.webp)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/Ahsoka-Tano-AG-2023-fotor-bg-remover-20240911174548.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-              <h2 class="vermastitulo">Chewbacca</h2>
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/chewbacca.jpg)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/life-sized-chewbacca-statue-figure-1-fotor-bg-remover-20240911175322.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
-            <div class="card">
-
-              <h2 class="vermastitulo">Anakin Skywalker</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/webp/Anakin_Skywalker_RotS.webp)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/anakin44-fotor-bg-remover-202409258543.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Aayla Secura</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/aayla.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/aayla-fotor-bg-remover-20240924141530.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Mara Jade Skywalker</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/sw-mara-jade.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/sw-mara-jade-fotor-bg-remover-20240924142035.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Mace Windu</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/mace.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/mace-fotor-bg-remover-20240924143351.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Jabba el Hutt</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/jabba2.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/jabba2-fotor-bg-remover-20240924164527.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Bib Fortuna</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/big.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/big-fotor-bg-remover-20240924165314.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Admiral Ackbar</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/admiral.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/admiral2-fotor-bg-remover-20240924173434.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Qui-Gon Jinn</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/QuiGon.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/qui33-fotor-bg-remover-20240924181242.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Darth Bane</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/darthbane34.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/darthbane34-fotor-bg-remover-20240924182758.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Grand Moff Tarkin</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/grand_moff_tarkin.jpg)"></div>
-              <div class="img"
-                style="--pngImgUrl: url(../img/png/grand_moff_tarkin-fotor-bg-remover-20240924173858.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Conde Dooku</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/dooku.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/dooku2-fotor-bg-remover-2024092419149.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-            <div class="card">
-
-              <h2 class="vermastitulo">Wicket W. Warrick</h2>
-
-              <div class="imgContainer" style="--imgUrl: url(../img/jpg/Wicket3.jpg)"></div>
-              <div class="img" style="--pngImgUrl: url(../img/png/Wicket3-fotor-bg-remover-20240924172924.png)">
-                <div class="overLayer"></div>
-              </div>
-              <div class="vermas">
-                <!-- Asegúrate de que el h3 esté fuera de cualquier contenedor flotante u otros estilos que afecten su posición -->
-                <h3><a href="personaje.php" target="_self">Ver más</a></h3>
-              </div>
-            </div>
-
+            <?php if (count($personajes)) { ?>
+              <?php foreach ($personajes as $personajes) { // Cambiado a $personaje para evitar confusión 
+              ?>
+                <div class="card">
+                  <h2 class="vermastitulo"><?= $personajes->getNombre(); ?></h2>
+                  <div class="imgContainer" style="--imgUrl: url(../img/<?= $personajes->getImagenUno(); ?>)"></div>
+                  <div class="img" style="--pngImgUrl: url(../img/<?= $personajes->getImagenDos(); ?>)">
+                    <div class="overLayer"></div>
+                  </div>
+                  <div class="vermas">
+                    <h3><a href="index.php?sec=personajes&id=<?= $personajes->getId(); ?>" target="_self">Ver más</a></h3>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } else { ?>
+              <h2>No se encontraron personajes.</h2>
+            <?php } ?>
           </div>
+
         </div>
 
       </main>
