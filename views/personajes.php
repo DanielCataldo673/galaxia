@@ -173,8 +173,9 @@ $especie = (new Especie())->get_x_id($id_especie);
             </div>  
         <?php } ?>  
     <?php } else { ?>  
-        <h2>No se encontraron personajes.</h2>
-        <img src="../img/webp/personajes.webp" alt="personajes" class="else">  
+        <h2>No se encontraron personajes</h2>
+        <img src="../img/png/nose-fotor-bg-remover-202410248405.png" alt="personajes" class="else">  
+        <h2 class="else2">Intente usar otras palabras claves</h2>
     <?php } ?>  
 </div>
 

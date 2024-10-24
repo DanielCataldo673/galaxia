@@ -20,7 +20,11 @@ html {
 .else{
   width: 650px;
   height: 400px;
-  margin-top: -5%;
+  margin-top: -15%;
+}
+
+.else2{
+  margin-top: -15%;
 }
 
 .wrapper {  
