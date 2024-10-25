@@ -1,24 +1,10 @@
-<?php
-require_once '../classes/Sables.php';
-require_once '../classes/Nombre_Sables.php';
-
-$id_nombre_sables = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
-
-$miObjetoSables = new Sables();
-$sables = $miObjetoSables->catalogo_x_nombre_sables($id_nombre_sables);
-
-$nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sables de Luz</title>
+    <title>Sable</title>
 
 
 
@@ -82,119 +68,41 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
         <div class="articulo5">
             <main>
 
-                <p>En el universo de Star Wars, los sables de luz son icónicos, pero las frases que se centran
-                    específicamente en ellos son menos comunes. Sin embargo, hay diálogos memorables que involucran
-                    sables de luz, especialmente en momentos de combate o reflexiones sobre su significado. Por ejemplo,
-                    una famosa frase de Obi-Wan Kenobi es: "Una antigua arma de un tiempo más civilizado", refiriéndose
-                    al sable de luz como símbolo de la nobleza de los Jedi.
+                <h2>Sable de Luz Morada</h2>
+                <p class="republica2"> El sable de luz morado, icónico en "Star Wars" y asociado a Mace Windu, interpretado por Samuel L. Jackson, se destaca por su color brillante y simboliza un equilibrio entre luz y oscuridad, evidenciando el dominio de la Fuerza de su portador. Este sable no solo refleja su estatus y honor dentro de la comunidad Jedi, sino que también complementa su estilo de combate "Vaapad", que combina agresividad y acrobacia, consolidando su legado como un Jedi notable.
                 </p>
-                <br>
-
-                <h2>Tipos de Sables de Luz</h2>
 
 
-                <div class="lightsabers-container">
-                    <div class="lightsaber" id="saber-red">
-                        <div class="blade" id="blade-red"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-red">Encender/Apagar</button>
-                        <h3>Luz Roja</h3>
+                <div class="galeriasable">
+                    <div class="fotosable"><a href="../img/sable/ki-adi-mundi.jpg" target="_blank"><img class="fotosable-1"
+                                src="../img/sable/ki-adi-mundi.jpg" alt="ki-adi-mundi"></a>
                     </div>
-                    <div class="lightsaber" id="saber-blue">
-                        <div class="blade" id="blade-blue"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-blue">Encender/Apagar</button>
-                        <h3>Luz Azul</h3>
+
+                    <div class="fotosable"><a href="../img/sable/mace.jpg" target="_blank"><img class="fotosable-1"
+                                src="../img/sable/mace.jpg" alt="mace"></a>
                     </div>
-                    <div class="lightsaber" id="saber-green">
-                        <div class="blade" id="blade-green"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-green">Encender/Apagar</button>
-                        <h3>Luz Verde</h3>
-                    </div>
-                    <div class="lightsaber" id="saber-purple">
-                        <div class="blade" id="blade-purple"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-purple">Encender/Apagar</button>
-                        <h3>Luz Morada</h3>
-                    </div>
-                    <div class="lightsaber" id="saber-yellow">
-                        <div class="blade" id="blade-yellow"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-yellow">Encender/Apagar</button>
-                        <h3>Luz Amarilla</h3>
-                    </div>
-                    <div class="lightsaber" id="saber-black">
-                        <div class="blade" id="blade-black"></div>
-                        <div class="hilt"></div>
-                        <button class="toggleButton" data-target="blade-black">Encender/Apagar</button>
-                        <h3>Luz Negra</h3>
+
+                    <div class="fotosable"><a href="../img/sable/darhtraya.jpg" target="_blank"><img class="fotosable-1"
+                                src="../img/sable/darhtraya.jpg" alt="darhtraya"></a>
                     </div>
                 </div>
-                <br>
+                <p class="republica2"><Strong>Empuñadura:</Strong>
+                    La empuñadura del sable de luz morado de Mace Windu es elegante, con detalles y a menudo diseñada
+                    para un agarre cómodo.
+                    Mace Windu diseñó su sable para reflejar su estilo personal y su poder como maestro Jedi.
+                    <br>
+                    <Strong>Cristal:</Strong>
+                    El cristal que produce la luz morada es único y, aunque no se detalla ampliamente en las historias,
+                    se asocia con el equilibrio entre la luz y la oscuridad.
+                    Representa la maestría en el uso tanto de la Fuerza luminosa como de la oscura.
+                    <br>
+                    <Strong>Hoja:</Strong>
+                    La hoja morada es distintiva y representa un enfoque equilibrado del uso de la Fuerza, sugiriendo
+                    que su portador puede navegar entre ambos lados.
+                    Mace Windu es conocido por su estilo de combate Vaapad, que utiliza la agresión de sus oponentes
+                    contra ellos mismos.
+                </p>
 
-
-
-                <div class="container-card">
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/rojo.jpg" alt="imagen1">
-                <h3>Luz Roja</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-              
-            </a>
-          </div>
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/azul.jpg" alt="imagen2">
-                <h3>Luz azul</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/verde.jpg" alt="imagen3">
-                <h3>Luz Verde</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/morada.jpg" alt="imagen4">
-                <h3 class="unoh3">Luz Morada</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/amarilla.jpg" alt="imagen5">
-                <h3>Luz Amarilla</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="sable.php">
-              <div class="face front">
-                <img src="../img/sable/negro.webp" alt="imagen6">
-                <h3>Luz Negra</h3>
-                <h3 class="dosh3">Ver Más</h3>
-              </div>
-            </a>
-          </div>
-          
-        </div>
-
-               
             </main>
         </div>
 

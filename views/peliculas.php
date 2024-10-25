@@ -162,7 +162,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=FZU43AoEhxQ" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal1"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -174,7 +173,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=vl32e0_NlqM" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal2"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -186,7 +184,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=d3XN49jmmGM" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal3"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -198,7 +195,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=J7pPf0gx77U" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal4"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -210,7 +206,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=d8es2mzjdFc" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal5"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -222,7 +217,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=Q4xMJxTaToQ" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal6"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -234,7 +228,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=Y1BKJSgnQuA" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal7"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -246,7 +239,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=iuf8Z_vpuPM" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal8"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -258,7 +250,6 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=Ej-xfKqlleM" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal9"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
             <div>
@@ -270,11 +261,106 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
                 <button class="fullscreen-btn">FullScreen</button>
                 <a href="https://www.youtube.com/watch?v=fZEbOMW_PNs" target="_blank"><button class="trailer-btn">Ver
                     Tráiler</button></a>
-                <a href="#modal10"><button class="ver-btn">Ver Más</button></a>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div class="container-card">
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi11.jpg" alt="imagen1">
+                <h3>Episodio I</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+              
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi12.webp" alt="imagen2">
+                <h3>Episodio II</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi13.webp" alt="imagen3">
+                <h3>Episodio III</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi14.jpg" alt="imagen4">
+                <h3>Episodio IV</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi15.webp" alt="imagen5">
+                <h3>Episodio V</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi16.webp" alt="imagen6">
+                <h3>Episodio VI</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi17.jpg" alt="imagen7">
+                <h3>Episodio VII</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi18.webp" alt="imagen8">
+                <h3>Episodio VIII</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi19.jpg" alt="imagen9">
+                <h3>Episodio IX</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="episodio.php">
+              <div class="face front">
+                <img src="../img/peliculas/epi20.jpg" alt="imagen5">
+                <h3>Episodio X</h3>
+                <h3 class="dosh3">Ver Más</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <div class="ordenpelis">
           <br>
           <br>
@@ -450,1003 +536,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
         </div>
 
 
-        <div class="historia-modal">
-          <div id="modal1" class="modalmask">
-            <div class="modalbox movedown">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode I - The Phantom Menace (La amenaza fantasma)</h2>
-              <img src="../img/peliculas/epi1.webp" alt="epi1">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                1999
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                136 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$1,021 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Qui-Gon Jinn,
-                Obi-Wan Kenobi,
-                Anakin Skywalker,
-                Padmé Amidala,
-                Jar Jar Binks.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Liam Neeson (Qui-Gon Jinn),
-                Ewan McGregor (Obi-Wan Kenobi),
-                Jake Lloyd (Anakin Skywalker),
-                Natalie Portman (Padmé Amidala),
-                Ahmed Best (Jar Jar Binks).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                David Tattersall
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Paul Hirsch
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Trisha Biggar
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                Un Jedi maestro, Qui-Gon Jinn, y su aprendiz, Obi-Wan Kenobi, intentan mediar en un conflicto entre la
-                Federación de Comercio y el planeta Naboo. Su misión se complica cuando descubren al joven Anakin
-                Skywalker,a quien creen que es el Elegido que traerá equilibrio a la Fuerza.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Fue la primera película de Star Wars en 16 años; Jar Jar Binks fue uno de los personajes más
-                controvertidos, recibiendo opiniones mixtas de los fans.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal2" class="modalmask">
-            <div class="modalbox rotate">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode II - Attack of the Clones (El ataque de los clones)</h2>
-              <img src="../img/peliculas/epi2.webp" alt="epi2">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2002
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                142 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$653 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Anakin Skywalker,
-                Padmé Amidala,
-                Obi-Wan Kenobi,
-                Jango Fett,
-                Yoda.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Hayden Christensen (Anakin Skywalker),
-                Natalie Portman (Padmé Amidala),
-                Ewan McGregor (Obi-Wan Kenobi),
-                Temuera Morrison (Jango Fett),
-                Frank Oz (Yoda).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                George Lucas y Jonathan Hales
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                David Tattersall
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Ben Burtt y Roger Barton
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Trisha Biggar
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                A medida que la galaxia se precipita hacia la guerra, Anakin Skywalker y Padmé Amidala se ven envueltos
-                en un romance prohibido, mientras Obi-Wan Kenobi investiga un intento de asesinato que revela una
-                conspiración mayor.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                La película fue la primera en utilizar un 100% de CGI (técnica de imágenes generadas por ordenador) en
-                algunos entornos.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal3" class="modalmask">
-            <div class="modalbox resize">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode III - Revenge of the Sith (La venganza de los Sith)</h2>
-              <img src="../img/peliculas/epi3.webp" alt="epi3">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2005
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                140 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$868 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Anakin Skywalker,
-                Padmé Amidala,
-                Obi-Wan Kenobi,
-                Palpatine,
-                Yoda.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Hayden Christensen (Anakin Skywalker),
-                Natalie Portman (Padmé Amidala),
-                Ewan McGregor (Obi-Wan Kenobi),
-                Ian McDiarmid (Palpatine),
-                Frank Oz (Yoda).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Mr. Gregory Smith
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Roger Barton y Niven Howie
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Trisha Biggar
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                La galaxia está en guerra. Anakin Skywalker, en su lucha por salvar a Padmé Amidala, se deja seducir por
-                el lado oscuro y se convierte en Darth Vader, mientras los Jedi son traicionados y exterminados.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                La transformación de Anakin en Darth Vader es uno de los momentos más icónicos de la saga.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal4" class="modalmask">
-            <div class="modalbox movedown">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode IV - A New Hope (Una nueva esperanza)</h2>
-              <img src="../img/peliculas/epi4.webp" alt="epi4">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                1977
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                121 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$775 millones (aproximadamente en reestrenos)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Luke Skywalker,
-                Han Solo,
-                Leia Organa,
-                Darth Vader,
-                Obi-Wan Kenobi.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Mark Hamill (Luke Skywalker),
-                Harrison Ford (Han Solo),
-                Carrie Fisher (Leia Organa),
-                Alec Guinness (Obi-Wan Kenobi),
-                David Prowse (Darth Vader, voz de James Earl Jones).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Gilbert Taylor
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Marcia Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                John Mollo
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                Un joven granjero, Luke Skywalker, se une a la Rebelión para derrotar al Imperio Galáctico y rescatar a
-                la Princesa Leia de las garras de Darth Vader, mientras aprende sobre la Fuerza con Obi-Wan Kenobi.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Fue la primera película en utilizar efectos especiales innovadores y ganó 6 Premios de la Academia.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal5" class="modalmask">
-            <div class="modalbox rotate">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode V - The Empire Strikes Back (El imperio contraataca)</h2>
-              <img src="../img/peliculas/epi5.webp" alt="epi5">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                1980
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                124 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$538 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Luke Skywalker,
-                Han Solo,
-                Leia Organa,
-                Darth Vader,
-                Yoda.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Mark Hamill (Luke Skywalker),
-                Harrison Ford (Han Solo),
-                Carrie Fisher (Leia Organa),
-                Frank Oz (Yoda),
-                David Prowse y James Earl Jones (Darth Vader).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                Irvin Kershner
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                Leigh Brackett y Lawrence Kasdan
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Peter Suschitzky
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Paul Hirsch, Marcia Lucas y Richard Chew
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                John Mollo
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                La Rebelión sufre grandes pérdidas ante el Imperio, mientras Luke Skywalker entrena con Yoda para
-                convertirse en Jedi, y Han y Leia enfrentan su propio viaje de amor y odio.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Contiene la famosa revelación de que Darth Vader es el padre de Luke Skywalker.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal6" class="modalmask">
-            <div class="modalbox resize">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode VI - Return of the Jedi (El retorno del Jedi)</h2>
-              <img src="../img/peliculas/epi6.webp" alt="epi6">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                1983
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                132 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$475 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Luke Skywalker,
-                Leia Organa,
-                Han Solo,
-                Darth Vader,
-                Palpatine.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Mark Hamill (Luke Skywalker),
-                Carrie Fisher (Leia Organa),
-                Harrison Ford (Han Solo),
-                Ian McDiarmid (Palpatine),
-                David Prowse y James Earl Jones (Darth Vader).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                Richard Marquand
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                Lawrence Kasdan y George Lucas
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Daniel Mindel
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Maryann Brandon, George Lucas y Richard Chew
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Stuart Freeborn
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                Luke Skywalker regresa para enfrentar a Darth Vader y el Emperador en una batalla final por la
-                libertad de la galaxia, mientras la Rebelión lucha contra la nueva Estrella de la Muerte.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Presentó a los Ewoks, que se convirtieron en íconos de la cultura pop.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal7" class="modalmask">
-            <div class="modalbox movedown">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode VII - The Force Awakens (El despertar de la Fuerza)</h2>
-              <img src="../img/peliculas/epi7.webp" alt="epi7">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2015
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                138 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$2,068 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Rey,
-                Finn,
-                Poe Dameron,
-                Kylo Ren,
-                Han Solo.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Daisy Ridley (Rey),
-                John Boyega (Finn),
-                Oscar Isaac (Poe Dameron),
-                Adam Driver (Kylo Ren),
-                Harrison Ford (Han Solo).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                J.J. Abrams
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                J.J. Abrams y Lawrence Kasdan
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Dan Mindel
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Maryann Brandon
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Michael Kaplan
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                La galaxia enfrenta una nueva amenaza con la llegada de la Primera Orden, mientras una nueva
-                heroína, Rey, busca a Luke Skywalker y se enfrenta a Kylo Ren, el oscuro líder de la Primera Orden.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Fue la primera película de la saga bajo la dirección de Disney y obtuvo gran aclamación de
-                los críticos y fans.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal8" class="modalmask">
-            <div class="modalbox rotate">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode VIII - The Last Jedi (Los últimos Jedi)</h2>
-              <img src="../img/peliculas/epi8.webp" alt="epi8">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2017
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                152 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$1,332 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Rey,
-                Finn,
-                Poe Dameron,
-                Kylo Ren,
-                Leia Organa.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Daisy Ridley (Rey),
-                John Boyega (Finn),
-                Oscar Isaac (Poe Dameron),
-                Adam Driver (Kylo Ren),
-                Carrie Fisher (Leia Organa).
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                Rian Johnson
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                Rian Johnson
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Steve Yedlin
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Bob Ducsay
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Michael Kaplan
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                Rey continúa su formación como Jedi bajo la guía de Luke Skywalker, mientras la Resistencia es
-                perseguida por la Primera Orden en una carrera contra el tiempo.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                La película fue muy divisiva entre los fans, generando debates intensos sobre su trama y desarrollo de
-                personajes.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal9" class="modalmask">
-            <div class="modalbox resize">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Episode IX - The Rise of Skywalker (El ascenso de Skywalker)</h2>
-              <img src="../img/peliculas/epi9.webp" alt="epi9">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2019
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                142 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                US$1,074 millones (aproximadamente)
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Rey,
-                Finn,
-                Poe Dameron,
-                Kylo Ren,
-                Palpatine.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Daisy Ridley (Rey),
-                John Boyega (Finn),
-                Oscar Isaac (Poe Dameron),
-                Adam Driver (Kylo Ren),
-                Ian McDiarmid (Palpatine),
-                Carrie Fisher (Leia Organa) - utilizando material de archivo.
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                J.J. Abrams
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Lucasfilm
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                J.J. Abrams y Chris Terrio
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                John Williams
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Dan Mindel
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                Maryann Brandon
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Michael Kaplan
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                La Resistencia lucha por la libertad de la galaxia mientras Rey enfrenta su pasado y la amenaza de
-                Palpatine, quien ha regresado para intentar conquistar nuevamente la galaxia. Junto a sus amigos, Rey
-                descubre la verdad sobre su identidad y su conexión con la Fuerza.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                Fue el cierre de la saga Skywalker y tuvo un enfoque en tratar de reconciliar aspectos de las películas
-                anteriores, aunque recibió críticas mixtas por su narrativa.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="modal10" class="modalmask">
-            <div class="modalbox movedown">
-              <a href="#close" title="Close" class="close-historia">X</a>
-              <h2>Rogue One: A Star Wars Story</h2>
-              <img src="../img/peliculas/rouge.webp" alt="rouge">
-              <p class="modals">
-                <strong class="modalsstrong">Año de estreno:</strong>
-                <br>
-                2016
-                <br>
-                <br>
-                <strong class="modalsstrong">Duración: </strong>
-                <br>
-                133 minutos
-                <br>
-                <br>
-                <strong class="modalsstrong">Recaudación:</strong>
-                <br>
-                Alrededor de US$1.056 millones de dólares a nivel mundial.
-                <br>
-                <br>
-                <strong class="modalsstrong">Personajes principales:</strong>
-                <br>
-                Jyn Erso,
-                Cassian Andor,
-                K-2SO,
-                Chirrut Îmwe,
-                Baze Malbus,
-                Orson Krennic,
-                Bodhi Rook.
-                <br>
-                <br>
-                <strong class="modalsstrong">Reparto:</strong>
-                <br>
-                Felicity Jones como Jyn Erso,
-                Diego Luna como Cassian Andor,
-                Alan Tudyk como K-2SO,
-                Donnie Yen como Chirrut Îmwe,
-                Jian Yang como Baze Malbus,
-                Ben Mendelsohn como Orson Krennic,
-                Riz Ahmed como Bodhi Rook,
-                Forest Whitaker como Saw Guerrera,
-                Mads Mikkelsen como Galen Erso.
-                <br>
-                <br>
-                <strong class="modalsstrong">Director: </strong>
-                <br>
-                Gareth Edwards
-                <br>
-                <br>
-                <strong class="modalsstrong">Producción: </strong>
-                <br>
-                Kathleen Kennedy, Allison Shearmur, Simon Emanuel.
-                <br>
-                <br>
-                <strong class="modalsstrong">Guion:</strong>
-                <br>
-                Chris Weitz, Tony Gilroy.
-                <br>
-                <br>
-                <strong class="modalsstrong">Música:</strong>
-                <br>
-                Michael Giacchino.
-                <br>
-                <br>
-                <strong class="modalsstrong">Fotografía:</strong>
-                <br>
-                Greig Fraser
-                <br>
-                <br>
-                <strong class="modalsstrong">Montaje:</strong>
-                <br>
-                John Gilroy, Colleen Halsey, Jodie K. Williams.
-                <br>
-                <br>
-                <strong class="modalsstrong">Vestuario:</strong>
-                <br>
-                Glyn Dillon.
-                <br>
-                <br>
-                <strong class="modalsstrong">Sinopsis:</strong>
-                <br>
-                "Rogue One" se sitúa en el contexto de la saga de Star Wars y se centra en un grupo de rebeldes que
-                intentan robar los planos de la primera Estrella de la Muerte, la superarma del Imperio Galáctico. Jyn
-                Erso, la hija de un científico que fue obligado a trabajar en la construcción de la estación, se une a
-                un pequeño grupo de rebeldes liderado por Cassian Andor. Al enfrentarse a fuerzas imperiales y sus
-                propios miedos, este equipo poco convencional se embarca en una misión que podría cambiar el rumbo de la
-                galaxia.
-                <br>
-                <br>
-                <strong class="modalsstrong">Curiosidades:</strong>
-                <br>
-                <br>
-                <strong class="modalstrong2">1. Primera Película Antológica:</strong> "Rogue One" es la primera película antológica del universo de Star
-                Wars, lo que significa que no forma parte de la saga numérica principal.
-                <br>
-                <strong class="modalstrong2">2. Cameo de personajes:</strong> La película incluye apariciones de personajes clásicos de la saga, incluidos
-                Grand Moff Tarkin (con CGI) y Darth Vader.
-                <br>
-                <strong class="modalstrong2">3. Cambio de director:</strong> Gareth Edwards fue el director principal, pero Tony Gilroy también estuvo
-                involucrado en la reescritura del guion y la edición final, lo que generó ciertas controversias sobre la
-                dirección de la película.
-                <br>
-                <strong class="modalstrong2">4. Darker Tone:</strong> Se considera que "Rogue One" tiene un tono más oscuro y maduro en comparación con
-                otras películas de Star Wars, reflejando la gravedad de la guerra.
-                <br>
-                <strong class="modalstrong2">5. Exito Crítico:</strong> La película fue bien recibida tanto por críticos como por fanáticos, alentando a
-                Disney a continuar explorando historias en el universo de Star Wars fuera de la saga principal.
-              </p>
-
-              <div class="botones-fin2">
-                <div class="icono-container">
-                  <a href="peliculas.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
-                    </svg></a>
-
-                  <div class="icono-texto">Cerrar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
 
 
         <div class="containerquiz">

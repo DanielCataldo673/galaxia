@@ -8,7 +8,7 @@
     position: relative;
     z-index: 10;
     /* menor que el nav */
-    margin-left: 5%;
+    margin-left: 2%;
     box-shadow: 2px 1px 20px rgba(192, 192, 192, 0.69);
 }
 
@@ -31,7 +31,7 @@
 
 .icono-texto3 {
     color: #FFFFFF;
-  }
+}
 
 
 
@@ -291,176 +291,30 @@
     background: rgba(250, 250, 253, 0);
     backdrop-filter: blur(10px);
     padding: 20px;
-    margin-left: 7%;
+    margin-left: 3%;
     margin-top: 5%;
 }
 
-.republica2 strong {
-    color: #FFE81F;
-}
-
-
-/*Efecto*/
-.modalmask {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-out;
-    pointer-events: none;
-}
-
-.modalmask:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/*Formato de la ventana*/
-.modalbox {
-    width: 100%;
-    position: relative;
-    padding: 5px 10px 3px 0px;
-    background: #fff;
-    border-radius: 3px;
-    -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    transition: all 500ms ease-in;
-    box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
-
-}
-
-/*Movimientos*/
-.movedown {
-    margin: 3% auto;
-}
-
-.rotate {
-    margin: 3% auto;
-    -webkit-transform: scale(-5, -5);
-    transform: scale(-5, -5);
-    transition: all 800ms ease-in-out;
-}
-
-.resize {
-    margin: 3% auto;
-    width: 0;
-    height: 0;
-}
-
-.modalmask:target .movedown {
-    width: 1000px;
+.imagenpelis {
+    width: 1200px;
     height: 500px;
-    font-size: 1vw;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    line-height: 3%;
-    overflow-y: auto;
-    /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
-    background-color: #7E7474;
-    padding: 25px 5px;
-    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
 }
 
-.modalmask:target .rotate {
-    transform: rotate(360deg) scale(1, 1);
-    -webkit-transform: rotate(360deg) scale(1, 1);
-    width: 1000px;
-    height: 500px;
-    font-size: 1vw;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    line-height: 3%;
-    overflow-y: auto;
-    /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
-    background-color: #7E7474;
-    padding: 25px 5px;
-    margin-bottom: 35px;
-}
-
-
-
-.modalmask:target .resize {
-    width: 1000px;
-    height: 500px;
-    font-size: 1vw;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    line-height: 3%;
-    overflow-y: auto;
-    /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
-    background-color: #7E7474;
-    padding: 1
-    25px 5px;
-    margin-bottom: 35px;
-}
-
-/*Boton de cerrar*/
-.close-historia {
-    background: #111111;
+.modals {
     color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: 1px;
-    text-align: center;
-    top: 1px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 3px;
-
-}
-
-.close-historia:hover {
-    background: #FFD43B;
-    color: #222;
-}
-
-.historia-modal h2 {
-    text-align: center;
-    margin: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #000000;
-}
-
-.historia-modal img {
-    width: 100%;
-    height: 65%;
+    font-size: 1.5vw;
+    margin-left: 0%;
 }
 
 .modalsstrong {
     color: #FFD43B;
-    font-size: 1.3vw;
-    font-weight: 800;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 2%;
+    font-size: 2vw;
+    font-weight: bold;
 }
 
-.modalstrong2 {
-    color: #FFD43B;
-    font-size: 1.3vw;
-    font-weight: 800;
-}
-
-.modals {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
-    font-weight: 800;
-    color: #000000;
-    line-height: 2.9vw;
-    margin-top: 4%;
-}
-
-.buscarpelis2{
+.buscarpelis2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     font-weight: 800;
@@ -469,13 +323,13 @@
     margin-top: 4%;
 }
 
-.buscarpelis2 strong{
+.buscarpelis2 strong {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 2vw;
 }
 
-.buscarpelis{
+.buscarpelis {
     width: 1380px;
     height: 500px;
 }
@@ -563,19 +417,111 @@
     /* Centra verticalmente los elementos */
     padding: 30px;
     margin-top: 0%;
-  }
-  
-  
-  .botones-fin2 svg {
+}
+
+
+.botones-fin2 svg {
     width: 2.5vw;
     height: 2.5vw;
     cursor: pointer;
-  }
+}
 
-  .icono-texto {
+.icono-texto {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;
     font-weight: bolder;
     margin-top: 10%;
     color: #000000;
+}
+
+.titulopeli {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: #FFE81F;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    letter-spacing: 0.3vw;
+    margin-top: 70px;
+    margin-left: -6%;
+}
+
+.republica3 {
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: rgba(250, 250, 253, 0);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 15%;
+    width: 1200px;
+    margin-left: 4%;
+    margin-bottom: -15%;
+  }
+  
+  .card {
+    position: relative;
+    width: 170px;
+    height: 220px;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+  
+  .card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card .front {
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card .front h3 {
+    position: absolute;
+    margin-bottom: 35%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+  }
+
+  .card .front .dosh3 {
+    position: absolute;
+    margin-top: 105%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
   }
