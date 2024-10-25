@@ -69,26 +69,10 @@
     <div class="articulo5">
       <main>
 
-      <h2 id="morada">Sable de Luz Morada</h2>
-                <p class="republica2"> El sable de luz morado es un arma icónica dentro del universo de "Star Wars", más
-                    conocido por estar asociado a el personaje Mace Windu, interpretado por Samuel L. Jackson en las
-                    películas. Este sable de luz se distingue por su color morado brillante, lo que lo hace único entre
-                    otros sables de luz, generalmente rojos, azules o verdes.
+      <h2>Sable de Luz Morada</h2>
+                <p class="republica2"> El sable de luz morado, icónico en "Star Wars" y asociado a Mace Windu, interpretado por Samuel L. Jackson, se destaca por su color brillante y simboliza un equilibrio entre luz y oscuridad, evidenciando el dominio de la Fuerza de su portador. Este sable no solo refleja su estatus y honor dentro de la comunidad Jedi, sino que también complementa su estilo de combate "Vaapad", que combina agresividad y acrobacia, consolidando su legado como un Jedi notable.
                 </p>
-                <p class="republica2"><strong>Fuerza de la Luz y de la Oscuridad:</strong> El color morado a menudo
-                    simboliza un
-                    equilibrio entre la luz y la oscuridad. Para algunos, representa que su portador está bien entrenado
-                    en ambas formas de la Fuerza.
-                    <br>
-                    <strong>Poder y Honor:</strong> El sable morado de Mace Windu refleja su posición como un maestro
-                    Jedi poderoso y un guerrero honorable.
-                    <br>
-                    <strong>Identidad Única: </strong>Mace Windu fue creado como un personaje destacado, y el sable
-                    morado lo diferencia de otros Jedi, acentuando su personalidad y habilidades especiales.
-                    <br>
-                    <strong>Estilo de Combate:</strong> Mace Windu es conocido por su estilo de combate llamado
-                    "Vaapad", que es un enfoque agresivo y acrobático, haciéndolo un adversario formidable en combate.
-                </p>
+
 
                 <div class="galeriasable">
                     <div class="fotosable"><a href="img/sable/ki-adi-mundi.jpg" target="_blank"><img class="fotosable-1"
