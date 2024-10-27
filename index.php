@@ -30,9 +30,6 @@ $secciones_validas = [
   "personaje" => [
     "titulo" => "Personaje"
   ],
-  "personajes" => [
-    "titulo" => "Personajes"
-  ],
   "alianza" => [
     "titulo" => "Alianza"
   ],
@@ -68,6 +65,15 @@ $secciones_validas = [
   ],
   "buscarsables" => [
     "titulo" => "Buscar Sables"
+  ],
+  "404" => [
+    "titulo" => "Error 404"
+  ],
+  "episodio" => [
+    "titulo" => "Episodio"
+  ],
+  "sable" => [
+    "titulo" => "Sable"
   ]
 
 ];
@@ -125,7 +131,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <div class="articulo1">
 
       <main>
-       
+
         <article class="starwars">
           <audio id="starWarsAudio" preload="auto">
             <source src="mp3/STAR WARS Suite for Orchestra (Complete Soundtrack) Orquesta y Coro RTVE.mp3" type="audio/mpeg" />

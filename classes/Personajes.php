@@ -205,7 +205,7 @@ class Personajes
         //llamamos a la conexion
         $conexion = (new Conexion())->getConexion();
 
-        $query = "SELECT * FROM personajes WHERE id = :idPersonajes";
+        $query = "SELECT * FROM personajes WHERE id = :id";
 
         $PDOStatement = $conexion->prepare($query);
 
