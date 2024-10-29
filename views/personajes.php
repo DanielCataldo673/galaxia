@@ -69,7 +69,7 @@ $especie = (new Especie())->get_x_id($id_especie);
 
         </ul>
       </nav>
-      <form action="buscarpersonajes.php" method="GET">
+      <form action="../buscarpersonajes.php" method="GET">
         <div class="buscadorpersonajes">
 
           <input class="tgl-skewed" type="text" placeholder="Barra de Búsqueda especifica de algún Personaje" id="buscarInput">
@@ -80,7 +80,8 @@ $especie = (new Especie())->get_x_id($id_especie);
 
         </div>
       </form>
-      <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>
+
+      <div id="alertMessage" class="alertMessage3">Ingrese la búsqueda deseada de acuerdo a la temática personajes</div>
     </div>
     <div class="articulo3">
       <aside>

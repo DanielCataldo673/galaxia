@@ -79,14 +79,20 @@
 
 
         <h2 class="animate__animated animate__rubberBand animate__repeat-2	animate__delay-5s">Buscador</h2>
-        <form id="miFormulario" action="buscadornaves.php" method="GET" onsubmit="cambiarVista()">
-          <div class="buscadorinicio">
-            <button class="btnbuscar" type="submit">Buscar 🔍</button>
-            <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>
-            <button type="button" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>
-          </div>
-        </form>
-        <h2 id="mensajeError" class="errormensaje"></h2>  
+        <form id="miFormulario" action="buscar.php" method="GET">  
+    <div class="buscadorinicio">  
+        <select name="tipo" id="tipoBusqueda" required>  
+            <option value="">Seleccionar tipo de búsqueda</option>  
+            <option value="peliculas">Películas</option>  
+            <option value="sables">Sables</option>  
+            <option value="personajes">Personajes</option>  
+        </select>  
+        <button class="btnbuscar" type="submit">Buscar 🔍</button>  
+        <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>  
+        <button type="reset" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>  
+    </div>  
+</form>
+         
  
 
         <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de personajes, peliculas y sables.</div>
@@ -677,7 +683,6 @@
 
 
   <script src="../js/index.js"></script>
-  <script src="../js/buscadorinicio.js"></script>
 </body>
 
 </html>

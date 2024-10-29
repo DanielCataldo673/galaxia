@@ -1,3 +1,64 @@
+<?php
+// Definición de campos para sables  
+$sables = [
+  'descripcion_uno' => '',
+  'descripcion_dos' => '',
+  'descripcion_tres' => '',
+  'descripcion_cuatro' => '',
+  'descripcion_cinco' => '',
+  'empuniadura' => '',
+  'cristal' => '',
+  'hoja' => '',
+  'imagen_uno' => '',
+  'imagen_dos' => '',
+  'imagen_tres' => ''
+];
+
+// Definición de campos para personajes  
+$personajes = [
+  'nombre' => '',
+  'descripcion' => '',
+  'afiliacion' => '',
+  'planeta_natal' => '',
+  'habilidades' => '',
+  'arma' => '',
+  'actor' => '',
+  'imagen_uno' => '',
+  'imagen_dos' => ''
+];
+
+// Definición de campos para peliculas  
+$peliculas = [
+  'titulo' => '',
+  'estreno' => '',
+  'duracion' => '',
+  'recaudacion' => '',
+  'personajes_principales' => '',
+  'reparto' => '',
+  'director' => '',
+  'produccion' => '',
+  'guion' => '',
+  'musica' => '',
+  'fotografia' => '',
+  'montaje' => '',
+  'vestuario' => '',
+  'sinopsis' => '',
+  'curiosidades' => '',
+  'imagen' => '',
+  'parrafo_uno' => '',
+  'parrafo_dos' => '',
+  'parrafo_tres' => '',
+  'parrafo_cuatro' => '',
+  'parrafo_cinco' => ''
+];
+
+// Verificación básica de parámetros de búsqueda  
+if (isset($_GET['tipo'])) {
+  $tipo = $_GET['tipo'];
+} else {
+  $tipo = 'sables'; // Valor por defecto  
+}
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -69,40 +130,75 @@
     <div class="articulo5">
       <main>
 
-      <h2>Sable de Luz Morada</h2>
-                <p class="republica2"> El sable de luz morado, icónico en "Star Wars" y asociado a Mace Windu, interpretado por Samuel L. Jackson, se destaca por su color brillante y simboliza un equilibrio entre luz y oscuridad, evidenciando el dominio de la Fuerza de su portador. Este sable no solo refleja su estatus y honor dentro de la comunidad Jedi, sino que también complementa su estilo de combate "Vaapad", que combina agresividad y acrobacia, consolidando su legado como un Jedi notable.
-                </p>
+        <?php if ($tipo == 'sables'): ?>
+          <h2><?php echo htmlspecialchars($sables['nombre']); ?></h2>
+          <p class="republica2"><?php echo htmlspecialchars($sables['descripcion']); ?></p>
 
+          <div class="galeriasable">
+            <?php foreach ($sables['imagenes'] as $imagen): ?>
+              <div class="fotosable">
+                <a href="<?php echo $imagen; ?>" target="_blank">
+                  <img class="fotosable-1" src="<?php echo $imagen; ?>" alt="Imagen Sable">
+                </a>
+              </div>
+            <?php endforeach; ?>
+          </div>
 
-                <div class="galeriasable">
-                    <div class="fotosable"><a href="img/sable/ki-adi-mundi.jpg" target="_blank"><img class="fotosable-1"
-                                src="img/sable/ki-adi-mundi.jpg" alt="ki-adi-mundi"></a>
-                    </div>
+        <?php elseif ($tipo == 'personajes'): ?>
+          <div class="cardpersonaje">
+            <div class="imagenpersonaje">
+              <img src="<?php echo $personajes['imagen']; ?>" alt="imagen">
+            </div>
+            <div class="descripcionpersonaje">
+              <h2 class="personajenombre"><?php echo htmlspecialchars($personajes['nombre']); ?></h2>
+              <div class="info-container">
+                <br>
+                <h5 class="perstrong">Descripción</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['descripcion']); ?></p>
+                <br>
+                <h5 class="perstrong">Afiliación</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['afiliacion']); ?></p>
+                <br>
+                <h5 class="perstrong">Planeta Natal</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['planetaNatal']); ?></p>
+                <br>
+                <h5 class="perstrong">Habilidades</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['habilidades']); ?></p>
+                <br>
+                <h5 class="perstrong">Arma</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['arma']); ?></p>
+                <br>
+                <h5 class="perstrong">Actor</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['actor']); ?></p>
+                <br>
+                <h5 class="perstrong">Especie</h5>
+                <p class="personajecaracteristica"><?php echo htmlspecialchars($personajes['especie']); ?></p>
+              </div>
+            </div>
+          </div>
 
-                    <div class="fotosable"><a href="img/sable/mace.jpg" target="_blank"><img class="fotosable-1"
-                                src="img/sable/mace.jpg" alt="mace"></a>
-                    </div>
+        <?php elseif ($tipo == 'peliculas'): ?>
+          <h2><?php echo htmlspecialchars($peliculas['titulo']); ?></h2>
+          <p class="buscarpelis2">
+            <strong>Año de estreno:</strong> <?php echo htmlspecialchars($peliculas['anio']); ?><br>
+            <strong>Duración: </strong> <?php echo htmlspecialchars($peliculas['duracion']); ?><br>
+            <strong>Recaudación:</strong> <?php echo htmlspecialchars($peliculas['recaudacion']); ?><br>
+            <strong>Personajes principales:</strong> <?php echo htmlspecialchars($peliculas['personajes']); ?><br>
+            <strong>Reparto:</strong> <?php echo htmlspecialchars($peliculas['reparto']); ?><br>
+            <strong>Director: </strong> <?php echo htmlspecialchars($peliculas['director']); ?><br>
+            <strong>Producción: </strong> <?php echo htmlspecialchars($peliculas['produccion']); ?><br>
+            <strong>Guion:</strong> <?php echo htmlspecialchars($peliculas['guion']); ?><br>
+            <strong>Música:</strong> <?php echo htmlspecialchars($peliculas['musica']); ?><br>
+            <strong>Fotografía:</strong> <?php echo htmlspecialchars($peliculas['fotografia']); ?><br>
+            <strong>Montaje:</strong> <?php echo htmlspecialchars($peliculas['montaje']); ?><br>
+            <strong>Vestuario:</strong> <?php echo htmlspecialchars($peliculas['vestuario']); ?><br>
+            <strong>Sinopsis:</strong> <?php echo htmlspecialchars($peliculas['sinopsis']); ?><br>
+            <strong>Curiosidades:</strong> <?php echo htmlspecialchars($peliculas['curiosidades']); ?><br>
+          </p>
+        <?php else: ?>
+          <p>No se encontraron resultados para el tipo de búsqueda solicitado.</p>
+        <?php endif; ?>
 
-                    <div class="fotosable"><a href="img/sable/darhtraya.jpg" target="_blank"><img class="fotosable-1"
-                                src="img/sable/darhtraya.jpg" alt="darhtraya"></a>
-                    </div>
-                </div>
-                <p class="republica2"><Strong>Empuñadura:</Strong>
-                    La empuñadura del sable de luz morado de Mace Windu es elegante, con detalles y a menudo diseñada
-                    para un agarre cómodo.
-                    Mace Windu diseñó su sable para reflejar su estilo personal y su poder como maestro Jedi.
-                    <br>
-                    <Strong>Cristal:</Strong>
-                    El cristal que produce la luz morada es único y, aunque no se detalla ampliamente en las historias,
-                    se asocia con el equilibrio entre la luz y la oscuridad.
-                    Representa la maestría en el uso tanto de la Fuerza luminosa como de la oscura.
-                    <br>
-                    <Strong>Hoja:</Strong>
-                    La hoja morada es distintiva y representa un enfoque equilibrado del uso de la Fuerza, sugiriendo
-                    que su portador puede navegar entre ambos lados.
-                    Mace Windu es conocido por su estilo de combate Vaapad, que utiliza la agresión de sus oponentes
-                    contra ellos mismos.
-                </p>
 
       </main>
     </div>
@@ -177,4 +273,3 @@
 </body>
 
 </html>
-

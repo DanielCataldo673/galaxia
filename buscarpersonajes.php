@@ -1,3 +1,18 @@
+<?php
+  require_once "functions/autoload.php";
+
+  $miObjetoEspecie = new Especie();
+  $especie = $miObjetoEspecie->lista_completa();
+
+
+  $keywords = isset($_GET['search']) ? $_GET['search'] : '';
+
+
+
+  $miObjetoPersonajes = new Personajes();
+
+  $productos = $miObjetoPersonajes->buscarPersonajes($keywords);
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -69,46 +84,47 @@
     <div class="articulo5">
       <main>
 
-      <div class="containercard">
-                    <div class="cardpersonaje">
-                        <div class="imagenpersonaje">
-                            <img src="img/webp/Yoda.webp" alt="Yoda">
-                        </div>
-                        <div class="descripcionpersonaje">
-                            <h2 class="personajenombre">Yoda</h2>
-                            <div class="info-container">
-                                <br>
-                                <h5 class="perstrong">Nacimiento</h5>
-                                <p class="personajecaracteristica">896 ABY</p>
-                                <br>
-                                <h5 class="perstrong">Muerte</h5>
-                                <p class="personajecaracteristica">4DBY, Dagobah</p>
-                                <br>
-                                <h5 class="perstrong">Especie</h5>
-                                <p class="personajecaracteristica">Especie de Yoda</p>
-                                <br>
-                                <h5 class="perstrong">Género</h5>
-                                <p class="personajecaracteristica">Masculino</p>
-                                <br>
-                                <h5 class="perstrong">Estatura</h5>
-                                <p class="personajecaracteristica">66 cm</p>
-                                <br>
-                                <h5 class="perstrong">Color de Pelo</h5>
-                                <p class="personajecaracteristica">Blanco</p>
-                                <br>
-                                <h5 class="perstrong">Peso</h5>
-                                <p class="personajecaracteristica">13 kilogramos</p>
-                                <br>
-                                <h5 class="perstrong">Afiliación</h5>
-                                <p class="personajecaracteristica">Orden Jedi (Alto Consejo Jedi), República Galáctica (Gran Ejército de la República)</p>
-                                <br>
-                                <h5 class="perstrong">Aprendices:</h5>
-                                <p class="personajecaracteristica">Dooku, Cin Drallig, Mace Windu, Obi-Wan Kenobi, Luke Skywalker, Anakin Skywalker.</p>
+                <div class="containercard">
+                    <?php if (count($personaje)) { ?>
+                        <?php foreach ($personaje as $personajes) { ?>
+                            <div class="cardpersonaje">
+                                <div class="imagenpersonaje">
+                                    <img src="../img/<?= $personajes->getImagenUno(); ?>" alt="imagen">
+                                </div>
+                                <div class="descripcionpersonaje">
+                                    <h2 class="personajenombre"><?= $personajes->getNombre(); ?></h2>
+                                    <div class="info-container">
+                                        <br>
+                                        <h5 class="perstrong">Descripción</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getDescripcion(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Afiliació</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getAfiliacion(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Planeta Natal</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getPlanetaNatal(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Habilidades</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getHabilidades(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Arma</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getArma(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Actor</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->getActor(); ?></p>
+                                        <br>
+                                        <h5 class="perstrong">Especie</h5>
+                                        <p class="personajecaracteristica"><?= $personajes->nombre_completo(); ?></p>
+                                        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        <?php } ?>
+                    <?php } else { ?>
+                        <h2>No se encontraron personajes.</h2>
+                        <img src="../img/webp/personajes.webp" alt="personajes" class="else">
+                    <?php } ?>
                 </div>
-
       </main>
     </div>
 

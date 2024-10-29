@@ -17,55 +17,64 @@ html {
 
 }
 
-.else{
+.else {
   width: 650px;
   height: 400px;
   margin-top: -15%;
 }
 
-.else2{
+.else2 {
   margin-top: -15%;
 }
 
-.wrapper {  
-  width: 1000px; /* Este ancho se puede ajustar según sea necesario */  
-  display: flex; /* Asegura que las tarjetas se alineen en una fila */  
-  flex-wrap: wrap; /* Permite que los elementos internos se envuelvan si es necesario */  
-  gap: 80px; /* Espacio entre las tarjetas */  
-  text-align: center;  
+.wrapper {
+  width: 1000px;
+  /* Este ancho se puede ajustar según sea necesario */
+  display: flex;
+  /* Asegura que las tarjetas se alineen en una fila */
+  flex-wrap: wrap;
+  /* Permite que los elementos internos se envuelvan si es necesario */
+  gap: 80px;
+  /* Espacio entre las tarjetas */
+  text-align: center;
   margin-top: 7%;
   margin-left: 3%;
-}  
+}
 
 
 
-.wrapper .card {  
-  flex: 0 1 220px; /* Esto define que cada tarjeta ocupará 220px de ancho (ajusta como desees) */  
-  display: flex;  
-  flex-direction: column;  
-  justify-content: center;  
-  align-items: center;  
-  height: auto; /* Cambiado de 100vh a auto */  
-  perspective: 1000px;  
-  perspective-origin: 50% 50%;  
-  margin-bottom: 35px; /* Ajusta este valor para cambiar el espacio entre filas */  
-}  
+.wrapper .card {
+  flex: 0 1 220px;
+  /* Esto define que cada tarjeta ocupará 220px de ancho (ajusta como desees) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* Cambiado de 100vh a auto */
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  margin-bottom: 35px;
+  /* Ajusta este valor para cambiar el espacio entre filas */
+}
 
 
 
 
-.card .imgContainer {  
-  width: 100%; /* Asegura que ocupe el ancho del contenedor de la tarjeta */  
-  aspect-ratio: 2 / 3; /* Mantiene la relación de aspecto */  
-  background: var(--imgUrl);  
-  background-position: center;  
-  background-size: cover;  
-  border-radius: 10px;  
-  transition: 500ms ease;  
-  box-shadow: 0 10px 30px #000000cc;  
-  border: 1px solid #fff;  
-  cursor: pointer;  
-}  
+.card .imgContainer {
+  width: 100%;
+  /* Asegura que ocupe el ancho del contenedor de la tarjeta */
+  aspect-ratio: 2 / 3;
+  /* Mantiene la relación de aspecto */
+  background: var(--imgUrl);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 500ms ease;
+  box-shadow: 0 10px 30px #000000cc;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
 
 
 .card .img {
@@ -150,56 +159,64 @@ h3 {
   opacity: 1;
 }
 
-.cuerpopersonajes {  
-  display:flex; /* Utiliza flexbox para la disposición */  
-  justify-content:start; /* Alinea los elementos al inicio */  
+.cuerpopersonajes {
+  display: flex;
+  /* Utiliza flexbox para la disposición */
+  justify-content: start;
+  /* Alinea los elementos al inicio */
   margin-bottom: -10%;
-}  
+}
 
-.filtros {  
-  width: 260px; /* Ancho fijo de 260px */   
-  margin-left: 3%;  
-  margin-right: 3.5%;  
-  margin-top: 1%;  
-  text-align: start;   
-}  
+.filtros {
+  width: 260px;
+  /* Ancho fijo de 260px */
+  margin-left: 3%;
+  margin-right: 3.5%;
+  margin-top: 1%;
+  text-align: start;
+}
 
-.filtros2 {  
-  margin-left: 3%;  
-  margin-bottom: 4%;  
-}  
+.filtros2 {
+  margin-left: 3%;
+  margin-bottom: 4%;
+}
 
-.filtro-item {  
-  display: flex;  
-  align-items: flex-start; /* Alineación en la parte superior */  
-  margin-bottom: 10px; /* Espacio entre cada grupo de label e input */  
-}  
+.filtro-item {
+  display: flex;
+  align-items: flex-start;
+  /* Alineación en la parte superior */
+  margin-bottom: 10px;
+  /* Espacio entre cada grupo de label e input */
+}
 
-.filtro-item label {  
-  margin-right: 10px; /* Espacio entre label y input */  
-  width: 200px; /* Ancho fijo para los labels */  
-}  
+.filtro-item label {
+  margin-right: 10px;
+  /* Espacio entre label y input */
+  width: 200px;
+  /* Ancho fijo para los labels */
+}
 
-.filtro-item input {  
-  margin-left: 5px; /* Espacio entre label y input */  
-} 
+.filtro-item input {
+  margin-left: 5px;
+  /* Espacio entre label y input */
+}
 
-fieldset {  
-  border: 3px solid #4BD5EE;  
+fieldset {
+  border: 3px solid #4BD5EE;
   padding: 20px;
-}  
+}
 
-legend {  
-  color: #FF2400;  
-  text-align: center; 
+legend {
+  color: #FF2400;
+  text-align: center;
   font-size: 1.3vw;
   font-family: 'Star Jedi Hollow', sans-serif;
   letter-spacing: 0.4vw;
 }
 
-.filtros h2{
-  color: #4BD5EE;  
-  text-align: center; 
+.filtros h2 {
+  color: #4BD5EE;
+  text-align: center;
   font-size: 2.5vw;
   font-family: 'Star Jedi Hollow', sans-serif;
   letter-spacing: 0.4vw;
@@ -241,6 +258,7 @@ legend {
   font-size: 1vw;
   font-weight: 700;
   text-align: center;
+
   &:after,
   &:before {
     transform: skew(10deg);
@@ -293,10 +311,28 @@ legend {
   -moz-box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
 }
 
+.alertMessage3 {
+  display: none;
+  background-color: #4BD5EE;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3vw;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 3%;
+  width: 610px;
+  height: 35px;
+  margin-left: 29%;
+  box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
+  text-align: center;
+}
+
 
 /* Form(filtros) */
 
-label{
+label {
   color: #fff;
   font-family: sans-serif;
 }

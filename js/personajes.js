@@ -51,4 +51,4 @@ buscarInput.addEventListener('focus', () => {
 
 buscarInput.addEventListener('blur', () => {  
     alertMessage.style.display = 'none'; // Esconder el mensaje al salir  
-});  
+}); 

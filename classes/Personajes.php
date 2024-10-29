@@ -235,6 +235,8 @@ class Personajes
         return $this->getEspecie()->getNombre();
     }
 
+    
+
     //Metodo buscar Personajes
 
     public function buscarPersonajes($keywords)
