@@ -86,8 +86,10 @@
             <button type="button" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>
           </div>
         </form>
+        <h2 id="mensajeError" class="errormensaje"></h2>  
+ 
 
-        <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>
+        <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de personajes, peliculas y sables.</div>
         <br>
         <br>
         <h2>Elige la sección de tu preferencia</h2>

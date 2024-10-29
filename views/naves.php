@@ -1,17 +1,3 @@
-<?php
-require_once '../classes/Naves.php';
-require_once '../classes/Nombre_Naves.php';
-
-$id_nombre_de_naves = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
-
-$miObjetoNaves = new Naves();
-$naves = $miObjetoNaves->catalogo_x_nombre_naves($id_nombre_de_naves);
-
-$nombre_de_naves = (new Nombre_Naves())->get_x_id($id_nombre_de_naves);
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 

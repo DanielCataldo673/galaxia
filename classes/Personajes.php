@@ -264,7 +264,7 @@ class Personajes
 
 
 
-    // Método buscar Todo 
+    // Método buscar Todo   
     public function buscarTodo($keywords)
     {
         // Llamamos a la conexión  
@@ -273,9 +273,21 @@ class Personajes
         // Creamos una variable con comodines para buscar coincidencias  
         $keywords = '%' . $keywords . '%';
 
-        // Llamamos a la query usando JOIN  
+        // Llamamos a la query usando JOIN (sin la tabla naves)  
         $query = "  
-    SELECT 'nave' AS tipo, naves.*, nombre_naves.nombre AS nombre_tipo FROM naves JOIN nombre_naves ON naves.id = nombre_naves.id WHERE nombre_naves.nombre LIKE :keywords UNION ALL SELECT 'pelicula' AS tipo, peliculas.*, titulo.nombre AS nombre_tipo FROM peliculas JOIN titulo ON peliculas.id = titulo.id WHERE titulo.nombre LIKE :keywords UNION ALL SELECT 'personaje' AS tipo, personajes.*, personajes.nombre AS nombre_tipo FROM personajes WHERE personajes.nombre LIKE :keywords UNION ALL SELECT 'sable' AS tipo, sables.*, nombre_sables.nombre AS nombre_tipo FROM sables JOIN nombre_sables ON sables._id = nombre_sables.id WHERE nombre_sables.nombre LIKE :keywords  ";
+    SELECT 'pelicula' AS tipo, peliculas.*, titulo.nombre AS nombre_tipo   
+    FROM peliculas   
+    JOIN titulo ON peliculas.id = titulo.id   
+    WHERE titulo.nombre LIKE :keywords   
+    UNION ALL   
+    SELECT 'personaje' AS tipo, personajes.*, personajes.nombre AS nombre_tipo   
+    FROM personajes   
+    WHERE personajes.nombre LIKE :keywords   
+    UNION ALL   
+    SELECT 'sable' AS tipo, sables.*, nombre_sables.nombre AS nombre_tipo   
+    FROM sables   
+    JOIN nombre_sables ON sables._id = nombre_sables.id   
+    WHERE nombre_sables.nombre LIKE :keywords";
 
         // Preparamos la consulta  
         $PDOStatement = $conexion->prepare($query);
@@ -285,8 +297,8 @@ class Personajes
 
         try {
             $PDOStatement->execute();
-        } catch (PDOException $e) {  // Manejo de excepciones 
-            return [];  // O gestionar otro tipo de error
+        } catch (PDOException $e) {  // Manejo de excepciones   
+            return [];  // O gestionar otro tipo de error  
         }
 
         // Ejecutamos  
