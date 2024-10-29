@@ -1,4 +1,64 @@
 <?php
+require_once "functions/autoload.php";
+require_once 'classes/Personajes.php';
+require_once 'classes/Especie.php';
+require_once 'classes/Sables.php';
+require_once 'classes/Nombre_Sables.php';
+require_once 'classes/Peliculas.php';
+require_once 'classes/Titulo.php';
+
+$id = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
+
+//Personajes
+
+$personajes = $miObjetoPersonajes->personajes_x_id($id);
+ 
+$miObjetoPersonajes = new Personajes();
+
+//Especies
+
+$personajes = $miObjetoPersonajes->catalogo_x_especie($id_especie);
+
+$especie = (new Especie())->get_x_id($id_especie);
+
+$miObjetoEspecie = new Especie();
+
+//Sables
+
+$sables = $miObjetoSables->sables_x_id($id);
+ 
+$miObjetoSables = new Sables();
+
+//Nomdres de sables
+
+$sables = $miObjetoNombre_Sables->catalogo_x_nombre_sables($id_nombre_sables);
+
+$nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
+ 
+$miObjetoNombre_Sables = new Nombre_Sables();
+
+//Peliculas
+
+$peliculas = $miObjetoPeliculas->peliculas_x_id($id);
+ 
+$miObjetoPeliculas = new Peliculas();
+
+//Titulos
+
+$peliculas = $miObjetoPeliculas->catalogo_x_titulo($id_titulo);
+
+$titulo = (new Titulo())->get_x_id($id_titulo);
+
+$miObjetoTitulo = new Titulo();
+
+
+
+$keywords = isset($_GET['search']) ? $_GET['search'] : '';
+
+
+$productos = $miObjetoPersonajes->buscarTodo($keywords);
+
+
 // Definición de campos para sables  
 $sables = [
   'descripcion_uno' => '',
@@ -58,6 +118,9 @@ if (isset($_GET['tipo'])) {
 } else {
   $tipo = 'sables'; // Valor por defecto  
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -73,6 +136,8 @@ if (isset($_GET['tipo'])) {
   <!-- vincular estilos -->
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/sables.css">
+  <link rel="stylesheet" href="css/peliculas.css">
+  <link rel="stylesheet" href="css/personaje.css">
 
   <!-- Animated -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">

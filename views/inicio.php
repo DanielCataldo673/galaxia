@@ -79,23 +79,23 @@
 
 
         <h2 class="animate__animated animate__rubberBand animate__repeat-2	animate__delay-5s">Buscador</h2>
-        <form id="miFormulario" action="buscar.php" method="GET">  
-    <div class="buscadorinicio">  
-        <select name="tipo" id="tipoBusqueda" required>  
-            <option value="">Seleccionar tipo de búsqueda</option>  
-            <option value="peliculas">Películas</option>  
-            <option value="sables">Sables</option>  
-            <option value="personajes">Personajes</option>  
-        </select>  
-        <button class="btnbuscar" type="submit">Buscar 🔍</button>  
-        <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>  
-        <button type="reset" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>  
-    </div>  
-</form>
-         
- 
+        <form id="miFormulario" action="buscar.php" method="GET">
+          <div class="buscadorinicio">
+            <select name="tipo" id="tipoBusqueda" required>
+              <option value="">Seleccionar tipo de búsqueda</option>
+              <option value="peliculas">Películas</option>
+              <option value="sables">Sables</option>
+              <option value="personajes">Personajes</option>
+            </select>
+            <button class="btnbuscar" type="submit">Buscar 🔍</button>
+            <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>
+            <button type="reset" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>
+          </div>
+        </form>
 
-        <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de personajes, peliculas y sables.</div>
+
+
+        <div id="alertMessage" class="alertMessage2">Seleccione el tipo de busqueda (personajes, peliculas y sables). <br><br>Ingrese la búsqueda deseada de acuerdo a la temática selecionada (personajes, peliculas y sables).</div>
         <br>
         <br>
         <h2>Elige la sección de tu preferencia</h2>
