@@ -100,7 +100,100 @@
         <br>
         <h2>Elige la sección de tu preferencia</h2>
 
+        <div>
+          <h2>Planetas</h2>
+          <br>
+          <br>
+          <p>Los planetas de Star Wars son mundos diversos y fascinantes, cada uno con su propia cultura, historia y paisaje, que enriquecen la narrativa épica de la saga galáctica.
+          </p>
+          <br>
+          <br>
+          <div class='itemdesplega'>
+            <div class='item__image'>
+              <div class='image-switch__outer'>
+                <div class='image-switch__inner'>
+                  <img src='../img/jpg/planetas.jpg'>
+                </div>
+              </div>
+            </div>
+            <div class='item__description'>
+              <div class='description-switch__outer'>
+                <div class='description-switch__inner'>
+                  <a href='planetas.php' target='_self'>
+                    <p>Ver más</p>
+                    <div class='item__action-arrow'>
+                      <i class='far fa-arrow-alt-circle-right'></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class='flap level0'>
+              <div class='flap level1 flip-right'>
+                <div class='flap level2 flip-down'>
+                  <div class='flap level3 flip-left'></div>
+                  <div class='flap level3 flip-right'>
+                    <div class='flap level4 flip-up'>
+                      <div class='flap level5 flip-right'>
+                        <div class='flap level6 flip-left'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='flap level2 flip-up'>
+                  <div class='flap level3 flip-left'>
+                    <div class='flap level4 flip-up'></div>
+                    <div class='flap level5 flip-down'>
+                      <div class='flap level6 flip-left'>
+                        <div class='flap level7 flip-up'>
+                          <div class='flap level8 flip-left'></div>
+                          <div class='flap level8 flip-right'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='flap level1 flip-left'>
+                <div class='flap level2 flip-up'>
+                  <div class='flap level3 flip-left'>
+                    <div class='flap level4 flip-down'>
+                      <div class='flap level5 flip-left'>
+                        <div class='flap level6 flip-right'>
+                          <div class='flap level7 flip-up'>
+                            <div class='flap level8--alt flip-right'></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='flap level2 flip-down'>
+                  <div class='flap level3 flip-right'>
+                    <div class='flap level4 flip-down'>
+                      <div class='flap level5 flip-up'></div>
+                    </div>
+                    <div class='flap level5 flip-up'>
+                      <div class='flap level6 flip-right'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='item__hover-icon'>
+              <div class='icon-switch__outer'>
+                <div class='icon-switch__inner'>
+                <i class="fa-solid fa-globe"></i>
+                </div>
+              </div>
 
+            </div>
+
+          </div>
+          <p class="iconosparra">Ver <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#FFD43B" d="M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40l0 148.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48l0 48 0 16 0 48c0 70.7-57.3 128-128 128l-16 0-64 0-.1 0-5.2 0c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7L128 40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96zm48-16c-8.8 0-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96z" />
+            </svg></p>
+        </div>
         <div>
           <h2>Personajes</h2>
           <br>
