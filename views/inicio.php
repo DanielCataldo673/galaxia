@@ -82,10 +82,10 @@
         <form id="miFormulario" action="buscar.php" method="GET">
           <div class="buscadorinicio">
             <select name="tipo" id="tipoBusqueda" required>
-              <option value="">Seleccionar tipo de búsqueda</option>
-              <option value="peliculas">Películas</option>
-              <option value="sables">Sables</option>
-              <option value="personajes">Personajes</option>
+              <option class="opciones" value="">Seleccionar tipo de búsqueda</option>
+              <option class="opciones" value="peliculas">Películas</option>
+              <option class="opciones" value="sables">Sables</option>
+              <option class="opciones" value="personajes">Personajes</option>
             </select>
             <button class="btnbuscar" type="submit">Buscar 🔍</button>
             <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>
