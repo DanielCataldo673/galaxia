@@ -159,27 +159,35 @@ $especie = (new Especie())->get_x_id($id_especie);
             </form>
           </div>
 
-          <div class="wrapper">  
-    <?php if (count($personajes)) { ?>  
-        <?php foreach ($personajes as $personaje) { ?>  
-            <div class="card"> 
-                <h2 class="vermastitulo"><?= $personaje->getNombre(); ?></h2>   
-                <div class="imgContainer" style="--imgUrl: url(../img/<?= $personaje->getImagenUno(); ?>)"></div> 
-                <div class="img" style="--pngImgUrl: url(../img/<?= $personaje->getImagenDos(); ?>)">  
-                    <div class="overLayer"></div>  
-                </div>  
-                <div class="vermas">  
+          <div class="wrapper">
+            <?php if (count($personajes)) { ?>
+              <?php foreach ($personajes as $personaje) { ?>
+                <div class="card">
+                  <h2 class="vermastitulo"><?= $personaje->getNombre(); ?></h2>
+                  <div class="imgContainer" style="--imgUrl: url(../img/<?= $personaje->getImagenUno(); ?>)"></div>
+                  <div class="img" style="--pngImgUrl: url(../img/<?= $personaje->getImagenDos(); ?>)">
+                    <div class="overLayer"></div>
+                  </div>
+                  <div class="vermas">
                     <h3><a href="index.php?sec=personajes&id=<?= $personaje->getId(); ?>" target="_self">Ver más</a></h3>
-                </div>  
-            </div>  
-        <?php } ?>  
-    <?php } else { ?>  
-        <h2>No se encontraron personajes</h2>
-        <img src="../img/png/nose-fotor-bg-remover-202410248405.png" alt="personajes" class="else">  
-        <h2 class="else2">Intente usar otras palabras claves</h2>
-    <?php } ?>  
-</div>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } else { ?>
+              <h2>No se encontraron personajes</h2>
+              <img src="../img/png/nose-fotor-bg-remover-202410248405.png" alt="personajes" class="else">
+              <h2 class="else2">Intente usar otras palabras claves</h2>
+            <?php } ?>
+          </div>
 
+        </div>
+        <br>
+        <br>
+        <h2>Memorama de Personajes de Star Wars</h2>
+        <div class="game-container" id="gameContainer"></div>
+        <div id="info">
+          <p id="pairsCounter">Pares encontrados: 0</p>
+          <button class="ver-btn" id="resetButton">Reiniciar Juego</button>
         </div>
 
       </main>

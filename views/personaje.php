@@ -113,7 +113,7 @@ $personajes = $miObjetoPersonajes->personajes_x_id($id)
                                         <br>
                                         <h5 class="perstrong">Especie</h5>
                                         <p class="personajecaracteristica"><?= $personajes->nombre_completo(); ?></p>
-                                        
+
                                     </div>
                                 </div>
                             </div>

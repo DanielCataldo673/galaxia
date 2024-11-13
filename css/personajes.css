@@ -338,6 +338,131 @@ label {
 }
 
 
+#gameContainer {  
+  display: grid;  
+  grid-template-columns: repeat(6, 1fr); /* Cambiado a 6 columnas */  
+  gap: 7px; 
+  margin-left: 19%;
+  margin-top: 4%;
+  width: 1000px;
+}  
+
+.cartas {  
+  width: 100px;  
+  height: 100px;  
+  background-color: #333;  
+  border: 1px solid #ccc;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  font-size: 24px;  
+  position: relative;  
+  overflow: hidden;  
+  cursor: pointer;  
+  transition: transform 0.3s;  
+}  
+
+.cartas.flipped {  
+  transform: rotateY(180deg);  
+}  
+
+.cartas img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+  display: none;  
+}  
+
+.cartas.flipped img {  
+  display: block;  
+}
+
+#info {  
+  margin-top: 20px; /* Espacio entre el juego y la información */  
+  text-align: center; /* Centrar el texto */  
+}  
+
+
+
+/* button */
+.ver-btn {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5%;
+  padding: 10px 15px;
+  margin-top: 1%;
+  margin-bottom: 15%;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.ver-btn::after {
+  content: "";
+  background: linear-gradient(#FCF596, #FBD288, #FF9C73, #FF4545);
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* glow */
+.ver-btn::before {
+  content: "";
+  background: linear-gradient(45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* hover */
+.ver-btn:hover::before {
+  opacity: 1;
+}
+
+.ver-btn:active:after {
+  background: transparent;
+}
+
+.ver-btn:active {
+  color: #000;
+  font-weight: bold;
+}
+
 .grid-contenedor {
   display: grid;
   grid-template-areas: 'banner-inicio banner-inicio banner-inicio'
