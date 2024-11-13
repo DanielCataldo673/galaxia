@@ -9,7 +9,7 @@ h3 {
   flex-wrap: wrap;
   max-width: 800px;
   margin-left: 26%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .planetBox {
@@ -333,6 +333,26 @@ h3 {
   color: #000;
   font-weight: bold;
 }
+
+:root{
+  --duration: 5s;
+}
+
+.canvas{
+  position: relative;
+  width: 128px;
+  height: 256px;
+}
+
+.jackson{
+  animation: color var(--duration) linear infinite;
+  width: 100%;
+  position: absolute;
+  bottom: 2;
+}
+
+
+
 
 /* carrousel 3d */
 

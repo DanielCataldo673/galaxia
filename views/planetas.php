@@ -71,6 +71,9 @@
         <main>
           <p>Estos planetas ofrecen una visión general del rico y variado universo de Star Wars, cada uno contribuyendo a la narrativa y la cultura de la galaxia en la que se desarrolla la historia.
           </p>
+          <marquee class="jackson" direction="left">
+            <img src="https://media.giphy.com/media/EDZP0UCtxiRQQ/giphy.gif" alt="">
+          </marquee>
           <div id='planets_container'>
             <div>
               <div class="planetBox">
