@@ -68,7 +68,8 @@
 
 .draggablecuerpoinfo {  
     display: none; /* Ocultar por defecto */  
-    margin-top: 3%;  
+    margin-top: 3%;
+    margin-left: 6%;  
 }  
 
 .info-visible {  
