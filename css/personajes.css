@@ -362,6 +362,10 @@ label {
   transition: transform 0.3s;  
 }  
 
+.cartas:hover{
+  box-shadow: 2px 1px 20px rgba(192, 192, 192, 0.69); 
+}
+
 .cartas.flipped {  
   transform: rotateY(180deg);  
 }  
@@ -379,7 +383,8 @@ label {
 
 #info {  
   margin-top: 20px; /* Espacio entre el juego y la información */  
-  text-align: center; /* Centrar el texto */  
+  text-align: center; /* Centrar el texto */ 
+  margin-bottom: -10%; 
 }  
 
 
@@ -397,7 +402,6 @@ label {
   border-radius: 5%;
   padding: 10px 15px;
   margin-top: 1%;
-  margin-bottom: 15%;
   cursor: pointer;
   position: relative;
   z-index: 0;
