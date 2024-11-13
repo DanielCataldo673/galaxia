@@ -364,7 +364,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
         <div class="ordenpelis">
           <br>
           <br>
-          <p>El orden en que se pueden ver las películas de Star Wars puede variar según la preferencia personal, ya que
+          <p class="orden-pelis">El orden en que se pueden ver las películas de Star Wars puede variar según la preferencia personal, ya que
             hay varias formas de disfrutarlas. Aquí tienes algunos de los métodos más populares:</p>
 
           <p class="republica2"><strong> Orden de lanzamiento: </strong> Este es el orden en que se estrenaron las
@@ -546,7 +546,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
           <button class="quizbtn" id="submit">Enviar Respuestas</button>
           <div id="result" class="hidden"></div>
           <button id="restart" class="hidden quizbtn">Reiniciar Quiz</button>
-
+          <div class="quizbtn2" id="questionCounter"></div>
         </div>
 
 

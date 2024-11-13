@@ -87,8 +87,6 @@ document.querySelectorAll('.fullscreen-btn').forEach(button => {
 
 
 
-/* QUIZ */
-
 document.addEventListener('DOMContentLoaded', () => {  
     const quizData = [  
         { question: "¿Quién es el maestro de Anakin Skywalker?", a: "Yoda",  b: "Obi-Wan Kenobi",  c: "Mace Windu",  d: "Darth Vader", correct: "b" },  
@@ -117,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit');  
     const resultContainer = document.getElementById('result');  
     const restartButton = document.getElementById('restart');  
+    const questionCounter = document.getElementById('questionCounter'); // Elemento para mostrar el contador  
 
     let currentQuestionIndex = 0;  
     let score = 0;  
@@ -129,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="label">  
                 <label>  
                     <input type="radio" name="answer" value="a"> ${currentQuizData.a}  
-                </label><br><br>
+                </label><br><br>  
                 <label>  
                     <input type="radio" name="answer" value="b"> ${currentQuizData.b}  
                 </label><br><br>  
@@ -141,6 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </label>  
             </div>  
         `;  
+
+        // Actualizar el contador de preguntas  
+        questionCounter.innerHTML = `Pregunta ${currentQuestionIndex + 1} de ${quizData.length}`;  
     }  
 
     function getSelected() {  

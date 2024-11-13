@@ -8,7 +8,7 @@
     position: relative;
     z-index: 10;
     /* menor que el nav */
-    margin-left: 2%;
+    margin-left: 7%;
     box-shadow: 2px 1px 20px rgba(192, 192, 192, 0.69);
 }
 
@@ -280,8 +280,12 @@
 
 .ordenpelis {
     margin-top: 15%;
+    margin-left: 7%;
 }
 
+.orden-pelis{
+    margin-left: 3%;
+}
 
 .republica2 {
     color: #fff;
@@ -366,6 +370,22 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;
     font-weight: 800;
+}
+
+.quizbtn2 {
+    display: block;
+    width: 33%;
+    padding: 10px;
+    margin-left: 33.5%;
+    margin-top: 20px;
+    background-color: #FFD43B;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 800;
+    text-align: center;
 }
 
 .quizbtn:hover {
@@ -467,7 +487,7 @@
     padding: 20px;
     margin-top: 15%;
     width: 1200px;
-    margin-left: 4%;
+    margin-left: 10%;
     margin-bottom: -15%;
   }
   
