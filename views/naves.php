@@ -13,7 +13,7 @@
     <!-- vincular estilos -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/naves.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
     <!-- Animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -509,7 +509,25 @@
                     </div>
                 </div>
 
-                
+                <div class="container">
+                    <h2>Adivina la nave de Star Wars</h2>
+                    <div id="wordDisplay"></div>
+                    <div id="imageContainer" style="margin-top: 20px;"></div> <!-- Contenedor para la imagen -->
+                    <div id="usedLetters"></div>
+                    <div id="errorCount">Errores: 0</div>
+                    <div class="ingrese">
+                    <label for="letterInput">Ingrese la letra deseada</label>
+                    </div>
+                    <div class="arrows33">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+                    </div>
+                    <input type="text" id="letterInput" maxlength="1" />
+                    <div id="message"></div>
+                    <div class="botones">
+                        <button class="reiniciar2" id="submitLetter">Enviar letra</button>
+                        <button class="reiniciar" id="restartGame">Reiniciar juego</button>
+                    </div>
+                </div>
             </main>
         </div>
 
@@ -580,7 +598,6 @@
 
 
     <script src="../js/naves.js"></script>
-    <script src="../js/naves2.js"></script>
 </body>
 
 </html>

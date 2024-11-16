@@ -266,3 +266,119 @@
 }
 
 
+.container {
+    max-width: 900px;
+    margin: 5% auto 0% auto;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
+  }
+
+  .container h2{
+    margin-top: 2%;
+  }
+  
+  #wordDisplay {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 1rem;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #usedLetters {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 3%;
+    margin-top: 5%;
+  }
+  
+  input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3vw;
+    width: 40px;
+    height: 40px;
+    margin: 2% 0% 2% 48%;
+    text-align: center;
+    box-shadow: -2px 5px 36px 21px rgba(69, 246, 243, 0.2);
+  }
+
+  #message{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3vw;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 3%;
+  }
+
+  .container label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: center;
+    color: #FFE81F;
+    margin: 3% 0%;
+  }
+
+  .arrows33{
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrows33 svg{
+    width: 40px;
+    height: 40px;
+  }
+
+  .ingrese{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reiniciar2,
+  .reiniciar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #000;
+    background-color: yellow;
+    width: 145px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .reiniciar2:hover,
+  .reiniciar:hover{
+    background-color: gray;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  #errorCount {  
+    font-size: 2vw;  
+    margin-bottom: 3%; 
+    margin-top: 3%;
+    color: #ff0000; 
+    text-align: center;
+  }
