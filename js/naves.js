@@ -101,3 +101,6 @@ function clearInfo() {
 
 // Añadir evento al botón para limpiar la selección  
 clearButton.addEventListener('click', clearSelection);
+
+
+

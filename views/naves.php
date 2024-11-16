@@ -69,7 +69,7 @@
         </div>
         <div class="articulo5">
             <main>
-                
+
                 <p>Las naves de Star Wars son íconos de la ciencia ficción, representando la vasta diversidad del
                     universo galáctico. Desde los icónicos cazas TIE y X-wing hasta el legendario Halcón Milenario, cada
                     nave tiene su propia historia y diseño distintivo. Estas naves no solo son vehículos de combate,
@@ -126,7 +126,7 @@
                     <div id="info1" class="info-block">
                         <div class="containerinfo">
                             <h3><strong>Halcón Milenario</strong></h3>
-                            <ul> 
+                            <ul>
                                 <li><strong>Sistema de navegación</strong>: HoloNavegador con actualizaciones pirata.
                                 </li>
                                 <li><strong>Coste</strong>: Aproximadamente 100,000 créditos.</li>
@@ -511,7 +511,71 @@
 
 
 
+                <div class="container">
+                    <h2 class="palabras2">Adivina la nave de Star Wars</h2>
+                    <div id="wordDisplay"></div>
+                    <div id="imageContainer" style="margin-top: 20px;"></div> <!-- Contenedor para la imagen -->
+                    <div id="usedLetters" class="palabras"></div>
+                    <input class="palabras" type="text" id="letterInput" maxlength="1" />
+                    <div id="message" class="palabras3"></div>
+                    <div id="errorCount">Errores: 0</div>
+                    <div class="botones">
+                        <button class="reiniciar2" id="submitLetter">Enviar letra</button>
+                        <button class="reiniciar" id="restartGame">Reiniciar juego</button>
+                        <a href="#modal5"><button class="reiniciar3">Reglas del juego</button></a>
+                    </div>
+                </div>
 
+                <div id="modal5" class="modalmask">
+                    <div class="modalbox resize">
+                        <a href="#close" title="Close" class="close-historia">X</a>
+                        <h2>Reglas del juego</h2>
+
+                        <p class="modals">
+                            <strong class="modalsstrong">Representación de la Palabra</strong>
+                            <br>
+                            <br>
+                            La palabra se muestra como una serie de guiones bajos o espacios para cada letra (por ejemplo, "_ _ _ _ _ _ _ _ _ _" para "Millennium Falcon").
+                            Los espacios se muestran para las letras que son espacios (por ejemplo, en "TIE Fighter", se mostrarían como "_ _ _  <br> _ _ _ _ _ _ _").
+                            <br>
+                            <br>
+                            <strong class="modalsstrong">Apuestas de Letras</strong>
+                            <br>
+                            <br>
+                            Los jugadores adivinan una letra a la vez.
+                            Si la letra está en la palabra, se revela en su posición correspondiente.
+                            Si la letra no está en la palabra, el jugador/computadora comienza a contar los errores.
+                            <br>
+                            <br>
+                            <strong class="modalsstrong">Contador de Errores</strong>
+                            <br>
+                            <br>
+                            Generalmente hay un límite en el número de errores permitidos (en este caso, 6 errores).
+                            Cada letra incorrecta contabiliza como un error.
+                            <br>
+                            <br>
+                            <strong class="modalsstrong">Fin del Juego</strong>
+                            <br>
+                            <br>
+                            El juego termina si el jugador adivina todas las letras de la palabra (gana) o si alcanza el límite de errores permitidos (pierde).
+                            En caso de ganar, se muestra un mensaje de felicitación junto con la palabra correcta.
+                            En caso de perder, se revela la palabra secreta.
+                            Después de terminar, se puede ofrecer la opción de reiniciar el juego con una nueva palabra.
+                            <br>
+                            <br>
+                        </p>
+
+                        <div class="botones-fin2">
+                            <div class="icono-container">
+                                <a href="naves.php" title="Cerrar" class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path fill="#080808" d="M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9l26 0c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9l14.6 0c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9l14.6 0c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6l26 0c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z" />
+                                    </svg></a>
+
+                                <div class="icono-texto">Cerrar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
 
@@ -582,6 +646,7 @@
 
 
     <script src="../js/naves.js"></script>
+    <script src="../js/naves2.js"></script>
 </body>
 
 </html>
