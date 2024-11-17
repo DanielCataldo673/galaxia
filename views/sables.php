@@ -64,6 +64,8 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
           <li><a href="naves.php" target="_self">Naves</a></li>
           <li><a href="sables.php" target="_self">Sables de Luz</a></li>
           <li><a href="peliculas.php" target="_self">Peliculas</a></li>
+          <li><a href="planetas.php" target="_self">Planetas</a></li>
+          <li><a href="galeria.php" target="_self">Galeria</a></li>
           <li><a href="../index.php" target="_self">Presentación</a></li>
           <li><a href="creditos.php" target="_self">Créditos</a></li>
 

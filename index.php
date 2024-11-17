@@ -74,6 +74,12 @@ $secciones_validas = [
   ],
   "sable" => [
     "titulo" => "Sable"
+  ],
+  "galeria" => [
+    "titulo" => "Galeria"
+  ],
+  "planetas" => [
+    "titulo" => "Planetas"
   ]
 
 ];

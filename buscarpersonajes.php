@@ -63,7 +63,9 @@
           <li><a href="views/naves.php" target="_self">Naves</a></li>
           <li><a href="views/sables.php" target="_self">Sables de Luz</a></li>
           <li><a href="views/peliculas.php" target="_self">Peliculas</a></li>
-          <li><a href="views/index.php" target="_self">Presentación</a></li>
+          <li><a href="views/planetas.php" target="_self">Planetas</a></li>
+          <li><a href="views/galeria.php" target="_self">Galeria</a></li>
+          <li><a href="index.php" target="_self">Presentación</a></li>
           <li><a href="views/creditos.php" target="_self">Créditos</a></li>
 
 

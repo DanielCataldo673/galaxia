@@ -1,0 +1,113 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, var(--size));
+  grid-auto-rows: var(--size);
+  margin-bottom: var(--size);
+  place-items: start center;
+  gap: 125px;
+  margin-top: 8%;
+
+
+
+
+  & img {
+    object-fit: cover;
+    width: calc(var(--size)*2);
+    height: calc(var(--size)*2);
+    clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+    transition: clip-path 0.25s, filter 0.75s;
+    grid-column: auto / span 2;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:nth-child(5n-1) {
+      grid-column: 2/span 2;
+    }
+
+    &:hover,
+    &:focus {
+      clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+      z-index: 1;
+      transition: clip-path 0.25s, filter 0.25s;
+    }
+
+    &:focus {
+      outline: 1px dashed black;
+      outline-offset: -5px;
+    }
+  }
+
+}
+
+
+
+
+/* Galeria */
+
+
+.foto .foto-1 {
+  width: 13.1vw;
+  height: 13.1vw;
+  border: solid #606061;
+  border-radius: 10%;
+  transition: all .5s ease-in-out;
+}
+
+.foto .foto-1:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #4c4c4c;
+  -webkit-box-shadow: 0px 0px 15px 15px #4c4c4c;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 17%;
+  margin-top: 20%;
+  max-width: 1000px;
+}
+
+/* CARD */
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 5%;
+  width: 1200px;
+  margin-left: 10%;
+  margin-bottom: -10%;
+  gap: 5px;
+}
+
+.card {
+  position: relative;
+  width: 13.1vw;
+  height: 13.1vw;
+  margin-left: 3%;
+  margin-top: 3%;
+  border: solid #606061;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
+}
+
+
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
