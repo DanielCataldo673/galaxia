@@ -1,17 +1,3 @@
-<?php
-require_once '../classes/Peliculas.php';
-require_once '../classes/Titulo.php';
-
-$id_titulo = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
-
-$miObjetoPeliculas = new Peliculas();
-$peliculas = $miObjetoPeliculas->catalogo_x_titulo($id_titulo);
-
-$titulo = (new Titulo())->get_x_id($id_titulo);
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -271,7 +257,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
 
         <div class="container-card">
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio1.php">
               <div class="face front">
                 <img src="../img/peliculas/epi11.jpg" alt="imagen1">
                 <h3>Episodio I</h3>
@@ -281,7 +267,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio2.php">
               <div class="face front">
                 <img src="../img/peliculas/epi12.webp" alt="imagen2">
                 <h3>Episodio II</h3>
@@ -290,7 +276,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio3.php">
               <div class="face front">
                 <img src="../img/peliculas/epi13.webp" alt="imagen3">
                 <h3>Episodio III</h3>
@@ -299,7 +285,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio4.php">
               <div class="face front">
                 <img src="../img/peliculas/epi14.jpg" alt="imagen4">
                 <h3>Episodio IV</h3>
@@ -308,7 +294,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio5.php">
               <div class="face front">
                 <img src="../img/peliculas/epi15.webp" alt="imagen5">
                 <h3>Episodio V</h3>
@@ -317,7 +303,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio6.php">
               <div class="face front">
                 <img src="../img/peliculas/epi16.webp" alt="imagen6">
                 <h3>Episodio VI</h3>
@@ -326,7 +312,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio7.php">
               <div class="face front">
                 <img src="../img/peliculas/epi17.jpg" alt="imagen7">
                 <h3>Episodio VII</h3>
@@ -335,7 +321,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio8.php">
               <div class="face front">
                 <img src="../img/peliculas/epi18.webp" alt="imagen8">
                 <h3>Episodio VIII</h3>
@@ -344,7 +330,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio9.php">
               <div class="face front">
                 <img src="../img/peliculas/epi19.jpg" alt="imagen9">
                 <h3>Episodio IX</h3>
@@ -353,7 +339,7 @@ $titulo = (new Titulo())->get_x_id($id_titulo);
             </a>
           </div>
           <div class="card">
-            <a href="episodio.php">
+            <a href="episodio10.php">
               <div class="face front">
                 <img src="../img/peliculas/epi20.jpg" alt="imagen5">
                 <h3>Episodio X</h3>

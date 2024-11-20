@@ -41,17 +41,6 @@ function redirigirSiSeleccionado(faccion) {
 
 
 
-// Alert cuando se enfoca el input  
-const buscarInput = document.getElementById('buscarInput');  
-const alertMessage = document.getElementById('alertMessage');  
-
-buscarInput.addEventListener('focus', () => {  
-    alertMessage.style.display = 'block'; // Mostrar el mensaje  
-});  
-
-buscarInput.addEventListener('blur', () => {  
-    alertMessage.style.display = 'none'; // Esconder el mensaje al salir  
-}); 
 
 
 const characters = [  
@@ -119,7 +108,7 @@ function createCards() {
 
 // Funciones del juego  
 function flipCard() {  
-    if (lockBoard) return;  
+    if (lockBoard || this.classList.contains('matched')) return;  
     this.classList.add('flipped');  
 
     const img = this.querySelector('img');  
@@ -144,6 +133,8 @@ function checkForMatch() {
 function disableCards() {  
     matchedCards += 1;  
     pairsCounter.textContent = `Pares encontrados: ${matchedCards}`;  
+    firstCard.classList.add('matched');  // Añadir clase 'matched' a la primera carta  
+    secondCard.classList.add('matched'); // Añadir clase 'matched' a la segunda carta  
     resetBoard();  
 
     // Comprobar si se han encontrado todas las cartas  

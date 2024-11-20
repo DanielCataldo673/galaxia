@@ -268,25 +268,38 @@ ul.nav li.no-hover a:hover {
   -moz-box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
 }
 
-.alertMessage2 {
-  display: none;
-  background-color: #4BD5EE;
-  color: #000000;
+.resultado {  
+  margin-top: 5%;
+}  
+
+.resultado-item {  
+  background:  rgba(69, 246, 243, 0.21); 
+  padding: 10px; 
+  border-radius: 5px;
+}  
+
+.resultado-titulo{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 1vw;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 5%;
-  width: 760px;
-  height: 75px;
-  margin-left: 24%;
-  box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
+  color: #000000;
+  font-size: 2.5vw;
   text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
 }
 
 
+.no-resultados {  
+  font-size: 2vw;  
+  color: #FFE81F;  
+  text-align: center;  
+  padding: 10px;  
+  background-color: rgba(69, 246, 243, 0.21);  
+  border: 1px solid #f5c6cb;  
+  border-radius: 5px;  
+  margin-left: 11%;
+}
 
 /* botones inicio,home, anterior */
 .botones-fin {

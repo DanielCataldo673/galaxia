@@ -1,21 +1,5 @@
-/* Normalizar Navegador */
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos Globales */
-
-html {
-  font-size: 100%;
-  /* 1rem = 10px */
-  scroll-behavior: smooth;
-  /* nos permite activar un desplazamiento suave (smooth scroll) al pulsar en un enlace de anclas <a>  */
-
-}
 
 .else {
   width: 650px;
@@ -224,110 +208,7 @@ legend {
 }
 
 
-/* BUSCADOR */
 
-.buscadorpersonajes {
-  display: flex;
-  flex-direction: row;
-  /* Coloca los elementos en una columna */
-  align-items: flex-start;
-  /* Alinear los elementos al inicio */
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  margin-left: 11%;
-  margin-top: -7px;
-  opacity: 0.8;
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.tgl-skewed {
-  width: 500px;
-  height: 47px;
-  overflow: hidden;
-  transform: skew(-10deg);
-  backface-visibility: hidden;
-  transition: all .2s ease;
-  font-family: sans-serif;
-  border-radius: 4%;
-  margin-right: 1%;
-  font-size: 1vw;
-  font-weight: 700;
-  text-align: center;
-
-  &:after,
-  &:before {
-    transform: skew(10deg);
-    display: inline-block;
-    transition: all .2s ease;
-    width: 100%;
-    position: absolute;
-    line-height: 2em;
-  }
-}
-
-.buscadorpersonajes .btnbuscar {
-  width: 90px;
-  height: 25px;
-  background-color: #4BD5EE;
-  border: none;
-  color: #0B0B0F;
-  font-size: 1vw;
-  font-weight: 700;
-  border-radius: 5%;
-  cursor: pointer;
-  margin-top: 2%;
-  margin-bottom: 20px;
-  margin-right: 1%;
-}
-
-.buscadorpersonajes .btnbuscar:hover {
-  box-shadow: 2px 0px 6px 10px rgba(69, 246, 243, 0.21);
-  -webkit-box-shadow: 2px 0px 6px 10px rgba(69, 246, 243, 0.21);
-  -moz-box-shadow: 2px 0px 6px 10px rgba(69, 246, 243, 0.21);
-}
-
-.buscadorpersonajes .btnborrar {
-  width: 90px;
-  height: 25px;
-  background-color: #FF2400;
-  border: none;
-  color: #0B0B0F;
-  font-size: 1vw;
-  font-weight: 700;
-  border-radius: 5%;
-  cursor: pointer;
-  margin-top: 2%;
-  margin-bottom: 20px;
-}
-
-.buscadorpersonajes .btnborrar:hover {
-  box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
-  -webkit-box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
-  -moz-box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
-}
-
-.alertMessage3 {
-  display: none;
-  background-color: #4BD5EE;
-  color: #000000;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.3vw;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 3%;
-  width: 610px;
-  height: 35px;
-  margin-left: 29%;
-  box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
-  text-align: center;
-}
 
 
 /* Form(filtros) */
@@ -337,13 +218,16 @@ label {
   font-family: sans-serif;
 }
 
+.memo2{
+  margin-top: 15%;
+}
 
 #gameContainer {  
   display: grid;  
   grid-template-columns: repeat(6, 1fr); /* Cambiado a 6 columnas */  
   gap: 7px; 
   margin-left: 19%;
-  margin-top: 4%;
+  margin-top: 5%;
   width: 1000px;
 }  
 

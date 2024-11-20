@@ -1,15 +1,3 @@
-<?php
-require_once '../classes/Personajes.php';
-require_once '../classes/Especie.php';
-
-$id = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
-$miObjetoPersonajes = new Personajes();
-$personajes = $miObjetoPersonajes->personajes_x_id($id)
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -84,46 +72,42 @@ $personajes = $miObjetoPersonajes->personajes_x_id($id)
         <div class="articulo5">
             <main>
 
-                <div class="containercard">
-                    <?php if (count($personaje)) { ?>
-                        <?php foreach ($personaje as $personajes) { ?>
-                            <div class="cardpersonaje">
-                                <div class="imagenpersonaje">
-                                    <img src="../img/<?= $personajes->getImagenUno(); ?>" alt="imagen">
-                                </div>
-                                <div class="descripcionpersonaje">
-                                    <h2 class="personajenombre"><?= $personajes->getNombre(); ?></h2>
-                                    <div class="info-container">
-                                        <br>
-                                        <h5 class="perstrong">Descripción</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getDescripcion(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Afiliació</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getAfiliacion(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Planeta Natal</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getPlanetaNatal(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Habilidades</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getHabilidades(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Arma</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getArma(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Actor</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->getActor(); ?></p>
-                                        <br>
-                                        <h5 class="perstrong">Especie</h5>
-                                        <p class="personajecaracteristica"><?= $personajes->nombre_completo(); ?></p>
+            <div class="containercard">
+                    <div class="cardpersonaje">
+                        <div class="imagenpersonaje">
+                            <img src="../img/jpg/dooku.jpg" alt="Conde">
+                        </div>
+                        <div class="descripcionpersonaje">
 
-                                    </div>
-                                </div>
+                            <div class="info-container">
+                                <br>
+                                <h5 class="perstrong">Nombre</h5>
+                                <p class="personajecaracteristica">Conde Dooku</p>
+                                <br>
+                                <h5 class="perstrong">Descripción</h5>
+                                <p class="personajecaracteristica">El Conde Dooku, también conocido como Darth Tyranus, es un antiguo Maestro Jedi que se convierte en un poderoso Lord Sith. Es un líder separatista durante las Guerras Clónicas, buscando poder y justicia de manera destructiva. Su elegante estilo y habilidades en combate lo hacen formidable, al tiempo que maneja la intriga política con astucia. La dualidad de su carácter refleja la tensión entre el bien y el mal.</p>
+                                <br>
+                                <h5 class="perstrong">Afiliación</h5>
+                                <p class="personajecaracteristica">Separatistas, Sith</p>
+                                <br>
+                                <h5 class="perstrong">Planeta Natal</h5>
+                                <p class="personajecaracteristica">Serenno</p>
+                                <br>
+                                <h5 class="perstrong">Habilidades</h5>
+                                <p class="personajecaracteristica">Maestría en la Fuerza, combate.</p>
+                                <br>
+                                <h5 class="perstrong">Arma</h5>
+                                <p class="personajecaracteristica">Sable de luz</p>
+                                <br>
+                                <h5 class="perstrong">Actor</h5>
+                                <p class="personajecaracteristica">Christopher Lee</p>
+                                <br>
+                                <h5 class="perstrong">Especie</h5>
+                                <p class="personajecaracteristica">Humana</p>
+                                <br>
                             </div>
-                        <?php } ?>
-                    <?php } else { ?>
-                        <h2>No se encontraron personajes.</h2>
-                        <img src="../img/webp/personajes.webp" alt="personajes" class="else">
-                    <?php } ?>
+                        </div>
+                    </div>
                 </div>
 
             </main>

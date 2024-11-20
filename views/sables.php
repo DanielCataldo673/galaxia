@@ -1,17 +1,3 @@
-<?php
-require_once '../classes/Sables.php';
-require_once '../classes/Nombre_Sables.php';
-
-$id_nombre_sables = $_GET['id'] ?? false; // Cambiado para obtener el ID correctamente  
-
-$miObjetoSables = new Sables();
-$sables = $miObjetoSables->catalogo_x_nombre_sables($id_nombre_sables);
-
-$nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -142,7 +128,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
 
         <div class="container-card">
           <div class="card">
-            <a href="sable.php">
+            <a href="sablerojo.php">
               <div class="face front">
                 <img src="../img/sable/rojo.jpg" alt="imagen1">
                 <h3>Luz Roja</h3>
@@ -152,7 +138,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
             </a>
           </div>
           <div class="card">
-            <a href="sable.php">
+            <a href="sableazul.php">
               <div class="face front">
                 <img src="../img/sable/azul.jpg" alt="imagen2">
                 <h3>Luz azul</h3>
@@ -161,7 +147,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
             </a>
           </div>
           <div class="card">
-            <a href="sable.php">
+            <a href="sableverde.php">
               <div class="face front">
                 <img src="../img/sable/verde.jpg" alt="imagen3">
                 <h3>Luz Verde</h3>
@@ -170,7 +156,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
             </a>
           </div>
           <div class="card">
-            <a href="sable.php">
+            <a href="sablemorada.php">
               <div class="face front">
                 <img src="../img/sable/morada.jpg" alt="imagen4">
                 <h3 class="unoh3">Luz Morada</h3>
@@ -179,7 +165,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
             </a>
           </div>
           <div class="card">
-            <a href="sable.php">
+            <a href="sableamarillo.php">
               <div class="face front">
                 <img src="../img/sable/amarilla.jpg" alt="imagen5">
                 <h3>Luz Amarilla</h3>
@@ -188,7 +174,7 @@ $nombre_sables = (new Nombre_Sables())->get_x_id($id_nombre_sables);
             </a>
           </div>
           <div class="card">
-            <a href="sable.php">
+            <a href="sablenegro.php">
               <div class="face front">
                 <img src="../img/sable/negro.webp" alt="imagen6">
                 <h3>Luz Negra</h3>

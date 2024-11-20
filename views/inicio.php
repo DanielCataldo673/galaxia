@@ -81,23 +81,17 @@
 
 
         <h2 class="animate__animated animate__rubberBand animate__repeat-2	animate__delay-5s">Buscador</h2>
-        <form id="miFormulario" action="buscar.php" method="GET">
-          <div class="buscadorinicio">
-            <select name="tipo" id="tipoBusqueda" required>
-              <option class="opciones" value="">Seleccionar tipo de búsqueda</option>
-              <option class="opciones" value="peliculas">Películas</option>
-              <option class="opciones" value="sables">Sables</option>
-              <option class="opciones" value="personajes">Personajes</option>
-            </select>
-            <button class="btnbuscar" type="submit">Buscar 🔍</button>
-            <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>
-            <button type="reset" class="btnborrar" id="btnBorrar">Borrar 🗑️</button>
-          </div>
-        </form>
 
+        <form id="miFormulario">  
+        <div class="buscadorinicio">  
+            <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput" name="keywords" required>  
+            <button class="btnbuscar" type="submit">Buscar 🔍</button>  
+            <button type="reset" class="btnborrar" id="borrarButton">Borrar 🗑️</button>  
+        </div>  
+    </form>  
 
+    <div class="resultado" id="resultado"></div>  
 
-        <div id="alertMessage" class="alertMessage2">Seleccione el tipo de busqueda (personajes, peliculas y sables). <br><br>Ingrese la búsqueda deseada de acuerdo a la temática selecionada (personajes, peliculas y sables).</div>
         <br>
         <br>
         <h2>Elige la sección de tu preferencia</h2>
@@ -185,7 +179,7 @@
             <div class='item__hover-icon'>
               <div class='icon-switch__outer'>
                 <div class='icon-switch__inner'>
-                <i class="fa-solid fa-globe"></i>
+                  <i class="fa-solid fa-globe"></i>
                 </div>
               </div>
 
